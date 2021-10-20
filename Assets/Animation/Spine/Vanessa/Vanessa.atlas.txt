@@ -1,0 +1,279 @@
+
+Vanessa.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+L_eye
+  rotate: false
+  xy: 246, 472
+  size: 28, 25
+  orig: 28, 27
+  offset: 0, 2
+  index: -1
+L_hand_1
+  rotate: false
+  xy: 246, 499
+  size: 116, 263
+  orig: 116, 268
+  offset: 0, 5
+  index: -1
+L_hand_2
+  rotate: false
+  xy: 364, 567
+  size: 50, 195
+  orig: 50, 197
+  offset: 0, 2
+  index: -1
+L_hand_3
+  rotate: true
+  xy: 983, 931
+  size: 88, 35
+  orig: 98, 37
+  offset: 0, 0
+  index: -1
+Leg_1
+  rotate: true
+  xy: 571, 622
+  size: 112, 383
+  orig: 118, 383
+  offset: 0, 0
+  index: -1
+Leg_2
+  rotate: true
+  xy: 424, 821
+  size: 107, 397
+  orig: 136, 397
+  offset: 0, 0
+  index: -1
+Lips_down
+  rotate: true
+  xy: 828, 746
+  size: 28, 11
+  orig: 28, 11
+  offset: 0, 0
+  index: -1
+Nose
+  rotate: true
+  xy: 319, 476
+  size: 21, 36
+  orig: 21, 36
+  offset: 0, 0
+  index: -1
+R_eye
+  rotate: false
+  xy: 823, 827
+  size: 33, 26
+  orig: 35, 26
+  offset: 2, 0
+  index: -1
+R_hand_1
+  rotate: true
+  xy: 416, 481
+  size: 124, 247
+  orig: 124, 284
+  offset: 0, 37
+  index: -1
+R_hand_2
+  rotate: true
+  xy: 823, 855
+  size: 73, 196
+  orig: 77, 205
+  offset: 4, 9
+  index: -1
+Vanessa_dress_images/Eye_back
+  rotate: false
+  xy: 357, 469
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: -1
+Vanessa_dress_images/Eyebrow_L
+  rotate: false
+  xy: 854, 746
+  size: 21, 11
+  orig: 21, 11
+  offset: 0, 0
+  index: -1
+Vanessa_dress_images/Eyebrow_R
+  rotate: false
+  xy: 890, 935
+  size: 32, 11
+  orig: 32, 11
+  offset: 0, 0
+  index: -1
+Vanessa_dress_images/L_eye
+  rotate: true
+  xy: 828, 776
+  size: 20, 17
+  orig: 20, 17
+  offset: 0, 0
+  index: -1
+Vanessa_dress_images/Neck
+  rotate: true
+  xy: 364, 493
+  size: 72, 44
+  orig: 74, 48
+  offset: 2, 4
+  index: -1
+Vanessa_dress_images/Nose
+  rotate: true
+  xy: 276, 474
+  size: 23, 41
+  orig: 23, 41
+  offset: 0, 0
+  index: -1
+Vanessa_dress_images/R_eye
+  rotate: true
+  xy: 828, 798
+  size: 27, 18
+  orig: 27, 18
+  offset: 0, 0
+  index: -1
+Vanessa_dress_images/eye_pupil
+  rotate: false
+  xy: 847, 788
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+Vanessa_dress_images/face
+  rotate: true
+  xy: 858, 759
+  size: 94, 126
+  orig: 102, 138
+  offset: 5, 11
+  index: -1
+Vanessa_dress_images/lips_down
+  rotate: true
+  xy: 841, 746
+  size: 28, 11
+  orig: 28, 11
+  offset: 0, 0
+  index: -1
+Vanessa_dress_images/lips_top
+  rotate: false
+  xy: 924, 935
+  size: 30, 11
+  orig: 30, 12
+  offset: 0, 1
+  index: -1
+Vanessa_dress_images/moth
+  rotate: false
+  xy: 956, 935
+  size: 23, 11
+  orig: 24, 11
+  offset: 1, 0
+  index: -1
+Vanessa_dress_images/teeth
+  rotate: true
+  xy: 416, 740
+  size: 22, 6
+  orig: 24, 6
+  offset: 2, 0
+  index: -1
+Vanessa_dress_images/v2_Body
+  rotate: true
+  xy: 2, 263
+  size: 203, 550
+  orig: 203, 550
+  offset: 0, 0
+  index: -1
+Vanessa_dress_images/v2_L_hand
+  rotate: true
+  xy: 424, 736
+  size: 83, 402
+  orig: 83, 402
+  offset: 0, 0
+  index: -1
+Vanessa_dress_images/v2_L_leg
+  rotate: false
+  xy: 665, 261
+  size: 111, 359
+  orig: 113, 359
+  offset: 0, 0
+  index: -1
+Vanessa_dress_images/v2_R_hand
+  rotate: true
+  xy: 246, 930
+  size: 89, 415
+  orig: 98, 422
+  offset: 9, 7
+  index: -1
+Vanessa_dress_images/v2_R_leg
+  rotate: false
+  xy: 554, 118
+  size: 108, 361
+  orig: 131, 361
+  offset: 2, 0
+  index: -1
+Vanessa_dress_images/v2_hair_back
+  rotate: true
+  xy: 663, 930
+  size: 89, 225
+  orig: 95, 225
+  offset: 4, 0
+  index: -1
+Vanessa_dress_images/v2_hair_front
+  rotate: true
+  xy: 664, 176
+  size: 83, 226
+  orig: 83, 226
+  offset: 0, 0
+  index: -1
+Vanessa_dress_images/v2_hair_top
+  rotate: true
+  xy: 416, 607
+  size: 127, 153
+  orig: 127, 153
+  offset: 0, 0
+  index: -1
+accesories
+  rotate: true
+  xy: 890, 948
+  size: 71, 91
+  orig: 71, 91
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 468
+  size: 242, 551
+  orig: 242, 554
+  offset: 0, 0
+  index: -1
+hair_1
+  rotate: true
+  xy: 778, 298
+  size: 95, 223
+  orig: 95, 223
+  offset: 0, 0
+  index: -1
+hair_2
+  rotate: false
+  xy: 246, 764
+  size: 176, 164
+  orig: 176, 164
+  offset: 0, 0
+  index: -1
+hair_3
+  rotate: false
+  xy: 778, 395
+  size: 91, 225
+  orig: 95, 225
+  offset: 0, 0
+  index: -1
+lips_top
+  rotate: false
+  xy: 381, 480
+  size: 30, 11
+  orig: 30, 12
+  offset: 0, 1
+  index: -1
+robe_1
+  rotate: true
+  xy: 664, 64
+  size: 110, 192
+  orig: 110, 192
+  offset: 0, 0
+  index: -1

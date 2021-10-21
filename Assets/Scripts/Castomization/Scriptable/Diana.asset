@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b049c00b62a73c048b6112e1a34c35e1, type: 3}
+  m_Name: Diana
+  m_EditorClassIdentifier: 
+  _skins:
+  - _guid: 15e435bc-c23d-4401-b8f1-880a711e7428
+    _name: default
+    _preview: {fileID: 0}
+  - _guid: 81e81ac2-222c-4dd8-8107-efff7056d42b
+    _name: Diana_skin
+    _preview: {fileID: 0}
+  - _guid: f6a7aef9-33ef-45a0-91d9-821d68f13401
+    _name: Hairs/Hair_1
+    _preview: {fileID: 0}
+  - _guid: 6f256c90-6b99-4083-b7e5-e388cfb134ce
+    _name: Hairs/Hair_2
+    _preview: {fileID: 0}
+  - _guid: 907cbe25-d361-499c-9e30-7fdbf12c89f5
+    _name: Hairs/Hair_3
+    _preview: {fileID: 0}
+  - _guid: cc4921bb-316c-4e3a-a576-be0bb36db5d5
+    _name: Hairs/Hair_4
+    _preview: {fileID: 0}
+  - _guid: 35578695-c12b-4f13-82fb-b5733aa2a869
+    _name: Hairs/Hair_5
+    _preview: {fileID: 0}
+  - _guid: 41f98ee7-f12d-4e48-9329-3866fef937a9
+    _name: Hairs/Hair_6
+    _preview: {fileID: 0}
+  - _guid: 2f215ddb-1c96-4ebc-81b4-82209969d09f
+    _name: Hairs/Hair_7
+    _preview: {fileID: 0}
+  - _guid: c8e53b37-8415-4c7d-82b0-d3a426011f26
+    _name: Hairs/Hair_8
+    _preview: {fileID: 0}
+  - _guid: f94815ea-550e-4f83-bc09-04102cf5cec5
+    _name: Makeups/Makeup_2
+    _preview: {fileID: 0}
+  - _guid: 13e587a7-0db6-4a1f-a3f4-831e9399ac39
+    _name: Makeups/Makeup_3
+    _preview: {fileID: 0}
+  - _guid: 85477c4b-ef2b-4342-8556-68ffae28de01
+    _name: Makeups/Makeup_4
+    _preview: {fileID: 0}
+  - _guid: adaf1d4f-0152-4ed9-bbcf-14642eac0459
+    _name: Outfits/Outfit_1
+    _preview: {fileID: 0}
+  - _guid: 3221e217-b9f5-4b20-9d65-010472687d12
+    _name: Outfits/Outfit_2
+    _preview: {fileID: 0}
+  - _guid: 0a7c50f7-7a4a-489b-a2c7-8157aa68a1b0
+    _name: Outfits/Outfit_3
+    _preview: {fileID: 0}
+  - _guid: da79bf88-2707-499f-a2cb-3241e16b3bbb
+    _name: Outfits/Outfit_4
+    _preview: {fileID: 0}
+  - _guid: db46f174-c846-439c-8030-fc8e6dcb1c5b
+    _name: Outfits/Outfit_5
+    _preview: {fileID: 0}

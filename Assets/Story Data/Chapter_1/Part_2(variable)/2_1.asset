@@ -18,7 +18,7 @@ MonoBehaviour:
   - "\u0421\u043F\u0443\u0441\u0442\u0438\u0442\u044C\u0441\u044F \u043E\u0442\u043A\u0440\u044B\u0442\u044C
     \u0434\u0432\u0435\u0440\u044C."
   _type: 3
-  _emotion: 0
+  _emotions: 0d0000000d000000
   _background: 0
   _character: 0
   _showCharacterOnStart: 0

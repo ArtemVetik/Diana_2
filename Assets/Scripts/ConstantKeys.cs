@@ -4,7 +4,7 @@ public static class ConstantKeys
 {
     public static class GlobalKeys
     {
-        public const float Delay = 0.01f;
+        public const float Delay = 0.5f;
     }
 
     public enum PhraseTypes
@@ -27,7 +27,7 @@ public static class ConstantKeys
         None
     }
 
-    public enum AnimationNames
+    public enum Emotions
     {
         none,
         confusion,

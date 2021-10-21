@@ -12,8 +12,10 @@ public class VariantUnit : StoryUnit
         return _nextParts[index];
     }
 
-    private void OnValidate()
+    protected override void OnValidate()
     {
+        base.OnValidate();
+
         if(_nextParts.Length == 0)
         {
             Debug.LogError($"Add at least 2 next parts to {name}");

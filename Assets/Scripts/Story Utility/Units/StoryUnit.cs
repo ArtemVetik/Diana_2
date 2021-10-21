@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New unit", menuName = "Story/Create new story unit")]
@@ -6,7 +7,7 @@ public class StoryUnit : ScriptableObject
     [SerializeField] protected string[] Phrases;
     [SerializeField] private ConstantKeys.PhraseTypes _type;
 
-    [SerializeField] private ConstantKeys.AnimationNames _emotion;
+    [SerializeField] private List<ConstantKeys.Emotions> _emotions = new List<ConstantKeys.Emotions>();
     [SerializeField] private ConstantKeys.Backgrounds _background;
     [SerializeField] private ConstantKeys.Characters _character;
 
@@ -18,7 +19,6 @@ public class StoryUnit : ScriptableObject
 
     public int Lenght => Phrases.Length;
     public ConstantKeys.PhraseTypes Type => _type;
-    public ConstantKeys.AnimationNames Animation => _emotion;
     public ConstantKeys.Backgrounds Background => _background;
     public ConstantKeys.Characters Character => _character;
     public bool ShowCharacterOnStart => _showCharacterOnStart;
@@ -27,8 +27,27 @@ public class StoryUnit : ScriptableObject
     public bool FadeOut => _fadeOut;
     public bool LastUnitInPart => _lastUnitInPart;
 
+    public bool HasEmotions => _emotions.Count > 0;
+
+    protected virtual void OnValidate()
+    {
+        if (_type == ConstantKeys.PhraseTypes.Author || _type == ConstantKeys.PhraseTypes.Choise)
+        {
+            foreach (var phrase in Phrases)
+            {
+                _emotions.Add(ConstantKeys.Emotions.normal);
+            }
+        }
+    }
+
     public string GetPhrase(int index)
     {
         return Phrases[index];
     }
+
+    public ConstantKeys.Emotions GetEmotion(int index)
+    {
+        return _emotions[index];
+    }
+
 }

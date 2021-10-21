@@ -15,7 +15,7 @@ MonoBehaviour:
   Phrases:
   - "\u0414\u043E\u0431\u0440\u044B\u0439 \u0432\u0435\u0447\u0435\u0440!"
   _type: 4
-  _emotion: 0
+  _emotions: 13000000
   _background: 0
   _character: 1
   _showCharacterOnStart: 0

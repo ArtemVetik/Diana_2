@@ -15,7 +15,7 @@ MonoBehaviour:
   Phrases:
   - ...?
   _type: 0
-  _emotion: 0
+  _emotions: 02000000
   _background: 0
   _character: 0
   _showCharacterOnStart: 0

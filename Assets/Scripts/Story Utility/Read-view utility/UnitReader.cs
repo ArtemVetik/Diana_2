@@ -8,7 +8,7 @@ public class UnitReader : MonoBehaviour   //осуществляет первичную проверку юнит
 
     private string _phrase;
     
-    public event UnityAction<string, StoryUnit, bool> UnitReaded;
+    public event UnityAction<string, StoryUnit, int> UnitReaded;
     public event UnityAction<string, int, StoryUnit> VariantPrepared;
     public event UnityAction UnitPhrasesEnded;
 
@@ -18,9 +18,9 @@ public class UnitReader : MonoBehaviour   //осуществляет первичную проверку юнит
 
         yield return null;
 
-        if(TryReadPhrase(unit, out bool isFirstPhrase))
+        if(TryReadPhrase(unit, out int index))
         {
-            UnitReaded?.Invoke(_phrase, unit, isFirstPhrase);
+            UnitReaded?.Invoke(_phrase, unit, index);
         }
         else
         {
@@ -28,25 +28,17 @@ public class UnitReader : MonoBehaviour   //осуществляет первичную проверку юнит
         }
     }
 
-    private bool TryReadPhrase(StoryUnit unit, out bool isFirstPhrase)
+    private bool TryReadPhrase(StoryUnit unit, out int index)
     {
-        var index = _indexer.GetNextIndex();
+        index = _indexer.GetNextIndex();
         
-        if(index == 0)
+        if (index >= 0)
         {
             _phrase = unit.GetPhrase(index);
-            isFirstPhrase = true;
-            return true;
-        }
-        else if (index > 0)
-        {
-            _phrase = unit.GetPhrase(index);
-            isFirstPhrase = false;
             return true;
         }
         else
         {
-            isFirstPhrase = false;
             return false;
         }
     }

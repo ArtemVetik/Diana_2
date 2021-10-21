@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,14 +5,14 @@ using UnityEngine.Events;
 
 [RequireComponent(typeof(PhraseViewer))]
 [RequireComponent(typeof(VariantViewer))]
-[RequireComponent(typeof(CharacterViewer))]
-[RequireComponent(typeof(BackgroundViewer))]
+[RequireComponent(typeof(EmotionViewer))]
 public class UnitViewHandler : MonoBehaviour
 {
     [SerializeField] private PhraseViewer _phraseViewer;
     [SerializeField] private VariantViewer _variantViewer;
     [SerializeField] private CharacterViewer _characterViewer;
     [SerializeField] private BackgroundViewer _backgroundViewer;
+    [SerializeField] private EmotionViewer _emotionViewer;
     [SerializeField] private UnitReader _reader;
     [SerializeField] private Fader _fader;
 
@@ -38,14 +37,14 @@ public class UnitViewHandler : MonoBehaviour
         _reader.VariantPrepared -= OnVariantPrepared;
     }
 
-    public void OnUnitReaded(string phrase, StoryUnit unit, bool isFirstPhrase)  //вызывается после чтения юнита ридером
+    public void OnUnitReaded(string phrase, StoryUnit unit, int index)  //вызывается после чтения юнита ридером
     {
-        StartCoroutine(ShowUnit(phrase, unit, isFirstPhrase));
+        StartCoroutine(ShowUnit(phrase, unit, index));
     }
 
-    private IEnumerator ShowUnit(string phrase, StoryUnit unit, bool isFirstPhrase)
+    private IEnumerator ShowUnit(string phrase, StoryUnit unit, int index)
     {
-        if(isFirstPhrase)
+        if (index == 0)
         {
             _backgroundViewer.SetBackground(unit.Background); //смена фона при необходимости
 
@@ -72,7 +71,10 @@ public class UnitViewHandler : MonoBehaviour
         _phraseViewer.SetPhraseBubble(unit.Type);  //подбор цвета пузыря и вывод текста
         _phraseViewer.SetPhrase(phrase);
 
-        //тут будет включение эмоции при ее наличии
+        if(unit.HasEmotions)
+        {
+            _emotionViewer.ShowEmotion(unit.GetEmotion(index));
+        }
 
         UnitViewed?.Invoke();
     }
@@ -93,8 +95,9 @@ public class UnitViewHandler : MonoBehaviour
             yield return _delay;
         }
 
-        yield return _delay;
+        _emotionViewer.ResetEmotion();
 
+        yield return _delay;
         UnitCompleted?.Invoke();
     }
 

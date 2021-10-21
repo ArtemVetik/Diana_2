@@ -49,7 +49,7 @@ public class StoryTeller : MonoBehaviour
         }
     }
 
-    private void InitializeActualUnit() //сюда будет передаваться список юнитов. Список обновляется внешним обработчиком при каждом выборе.
+    private void InitializeActualUnit()
     {
         _actualUnit = _story[++_unitIndex];
     }
@@ -84,12 +84,12 @@ public class StoryTeller : MonoBehaviour
         _clickAvailable = true;
     }
 
-    private void OnUnitPhrasesEnded()  //завершающие действия с юнитом
+    private void OnUnitPhrasesEnded()
     {
         StartCoroutine(_viewer.ShowFinishActions(_actualUnit));
     }
 
-    private void OnUnitCompleted() //выбор следующего юнита и его считывание
+    private void OnUnitCompleted()
     {
         if (!_actualUnit.LastUnitInPart)
         {
@@ -112,7 +112,7 @@ public class StoryTeller : MonoBehaviour
         _buttonsPool.Add(button);
     }
 
-    public void OnVariantChosen(int index)
+    public void OnVariantChosen(int index)  //добавить завершающие действия для вариативных юнитов
     {
         _variantsPrepared = false;
 

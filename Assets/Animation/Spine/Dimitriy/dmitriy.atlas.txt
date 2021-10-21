@@ -1,0 +1,251 @@
+
+dmitriy.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body
+  rotate: false
+  xy: 1367, 873
+  size: 656, 601
+  orig: 656, 628
+  offset: 0, 14
+  index: -1
+Body_light
+  rotate: false
+  xy: 1266, 270
+  size: 656, 601
+  orig: 656, 628
+  offset: 0, 14
+  index: -1
+Brow_left
+  rotate: false
+  xy: 494, 1813
+  size: 57, 23
+  orig: 58, 23
+  offset: 0, 0
+  index: -1
+Brow_right
+  rotate: false
+  xy: 553, 1810
+  size: 71, 26
+  orig: 72, 28
+  offset: 0, 0
+  index: -1
+Eyes
+  rotate: false
+  xy: 626, 1801
+  size: 111, 35
+  orig: 112, 37
+  offset: 1, 1
+  index: -1
+Eyes_obod
+  rotate: false
+  xy: 1166, 1786
+  size: 142, 50
+  orig: 142, 50
+  offset: 0, 0
+  index: -1
+Face
+  rotate: true
+  xy: 1608, 1476
+  size: 194, 271
+  orig: 196, 271
+  offset: 2, 0
+  index: -1
+Face_Anger
+  rotate: true
+  xy: 2, 1451
+  size: 194, 271
+  orig: 196, 271
+  offset: 2, 0
+  index: -1
+Face_Disappointment
+  rotate: true
+  xy: 275, 1424
+  size: 194, 271
+  orig: 196, 271
+  offset: 2, 0
+  index: -1
+Face_Happiness
+  rotate: true
+  xy: 548, 1423
+  size: 194, 271
+  orig: 196, 271
+  offset: 2, 0
+  index: -1
+Face_Suffering
+  rotate: true
+  xy: 821, 1376
+  size: 194, 271
+  orig: 196, 271
+  offset: 2, 0
+  index: -1
+Face_Wish
+  rotate: true
+  xy: 1094, 1330
+  size: 194, 271
+  orig: 196, 271
+  offset: 2, 0
+  index: -1
+Hair_bg
+  rotate: true
+  xy: 1310, 1767
+  size: 69, 220
+  orig: 70, 222
+  offset: 1, 1
+  index: -1
+Hand_left
+  rotate: true
+  xy: 1532, 1721
+  size: 115, 264
+  orig: 175, 409
+  offset: 0, 8
+  index: -1
+Hand_left_light
+  rotate: true
+  xy: 2, 1702
+  size: 115, 264
+  orig: 175, 409
+  offset: 0, 8
+  index: -1
+Hand_right
+  rotate: true
+  xy: 1044, 1572
+  size: 193, 280
+  orig: 199, 282
+  offset: 6, 2
+  index: -1
+Hand_right_light
+  rotate: true
+  xy: 1326, 1526
+  size: 193, 280
+  orig: 199, 282
+  offset: 6, 2
+  index: -1
+Hear
+  rotate: false
+  xy: 1798, 1672
+  size: 226, 164
+  orig: 233, 173
+  offset: 6, 9
+  index: -1
+Hear_light
+  rotate: false
+  xy: 268, 1647
+  size: 226, 164
+  orig: 233, 173
+  offset: 6, 9
+  index: -1
+Leg_bg
+  rotate: true
+  xy: 898, 1791
+  size: 45, 132
+  orig: 57, 154
+  offset: 5, 17
+  index: -1
+Leg_bg_light
+  rotate: true
+  xy: 1032, 1791
+  size: 45, 132
+  orig: 57, 154
+  offset: 5, 17
+  index: -1
+Leg_left
+  rotate: true
+  xy: 2, 1038
+  size: 290, 1150
+  orig: 410, 1192
+  offset: 20, 42
+  index: -1
+Leg_left_light
+  rotate: true
+  xy: 2, 746
+  size: 290, 1150
+  orig: 410, 1192
+  offset: 20, 42
+  index: -1
+Leg_right
+  rotate: true
+  xy: 2, 374
+  size: 370, 1262
+  orig: 370, 1262
+  offset: 0, 0
+  index: -1
+Leg_right_light
+  rotate: true
+  xy: 2, 2
+  size: 370, 1262
+  orig: 370, 1262
+  offset: 0, 0
+  index: -1
+Lips_bottom
+  rotate: false
+  xy: 422, 1814
+  size: 70, 22
+  orig: 70, 22
+  offset: 0, 0
+  index: -1
+Lips_top
+  rotate: false
+  xy: 71, 1822
+  size: 69, 14
+  orig: 69, 14
+  offset: 0, 0
+  index: -1
+Lokon
+  rotate: true
+  xy: 739, 1792
+  size: 44, 78
+  orig: 46, 79
+  offset: 0, 1
+  index: -1
+Nose
+  rotate: true
+  xy: 819, 1792
+  size: 44, 77
+  orig: 47, 79
+  offset: 3, 0
+  index: -1
+Sheya
+  rotate: true
+  xy: 496, 1620
+  size: 170, 272
+  orig: 170, 274
+  offset: 0, 0
+  index: -1
+Sheya_light
+  rotate: true
+  xy: 770, 1619
+  size: 170, 272
+  orig: 170, 274
+  offset: 0, 0
+  index: -1
+Uho_left
+  rotate: true
+  xy: 350, 1815
+  size: 21, 70
+  orig: 22, 72
+  offset: 1, 2
+  index: -1
+Veki
+  rotate: false
+  xy: 233, 1819
+  size: 115, 17
+  orig: 118, 17
+  offset: 2, 0
+  index: -1
+Zrachki
+  rotate: false
+  xy: 142, 1821
+  size: 89, 15
+  orig: 89, 15
+  offset: 0, 0
+  index: -1
+Zubi
+  rotate: false
+  xy: 2, 1823
+  size: 67, 13
+  orig: 67, 13
+  offset: 0, 0
+  index: -1

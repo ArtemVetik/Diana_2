@@ -18,10 +18,10 @@ MonoBehaviour:
   - "\u0418\u0434\u0443-\u0438\u0434\u0443!\t\t"
   _type: 1
   _emotions: 120000000d000000
-  _background: 0
+  _background: 13
   _character: 0
   _showCharacterOnStart: 1
   _hideCharacterOnFinish: 0
-  _fadeIn: 0
+  _fadeIn: 1
   _fadeOut: 0
   _lastUnitInPart: 1

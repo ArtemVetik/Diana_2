@@ -23,7 +23,7 @@ MonoBehaviour:
   - "\u041B\u0443\u0447\u0448\u0435 \u0434\u043E\u043C \u043E\u0441\u043C\u043E\u0442\u0440\u044E."
   _type: 0
   _emotions: 010000000d00000005000000
-  _background: 0
+  _background: 13
   _character: 0
   _showCharacterOnStart: 1
   _hideCharacterOnFinish: 0

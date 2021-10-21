@@ -16,11 +16,11 @@ MonoBehaviour:
   - "\u0414\u0438\u0430\u043D\u0430 \u0432 \u0443\u043F\u043E\u0440 \u043F\u043E\u0441\u043C\u043E\u0442\u0440\u0435\u043B\u0430
     \u043D\u0430 \u043F\u0430\u0440\u043D\u044F."
   _type: 2
-  _emotion: 0
+  _emotions: 0d000000
   _background: 0
   _character: 0
-  _showCharacterOnStart: 0
+  _showCharacterOnStart: 1
   _hideCharacterOnFinish: 0
   _fadeIn: 0
-  _fadeOut: 0
+  _fadeOut: 1
   _lastUnitInPart: 1

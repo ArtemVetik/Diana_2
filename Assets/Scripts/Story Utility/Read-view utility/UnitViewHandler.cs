@@ -37,7 +37,7 @@ public class UnitViewHandler : MonoBehaviour
         _reader.VariantPrepared -= OnVariantPrepared;
     }
 
-    public void OnUnitReaded(string phrase, StoryUnit unit, int index)  //вызывается после чтения юнита ридером
+    public void OnUnitReaded(string phrase, StoryUnit unit, int index)
     {
         StartCoroutine(ShowUnit(phrase, unit, index));
     }
@@ -46,7 +46,7 @@ public class UnitViewHandler : MonoBehaviour
     {
         if (index == 0)
         {
-            _backgroundViewer.SetBackground(unit.Background); //смена фона при необходимости
+            _backgroundViewer.SetBackground(unit.Background);
 
             if (unit.FadeOut)
             {
@@ -54,7 +54,7 @@ public class UnitViewHandler : MonoBehaviour
                 yield return _delay;
             }
 
-            if (unit.ShowCharacterOnStart)  //проверка на выезд персонажа в начале юнита
+            if (unit.ShowCharacterOnStart)
             {
                 _characterViewer.InitCharacter(unit.Character);
                 _characterViewer.MoveCharacter(true);
@@ -66,9 +66,9 @@ public class UnitViewHandler : MonoBehaviour
         {
             yield return _delay;
         }
-        _phraseViewer.ToggleBubble(true); //включение пузыря
-        _phraseViewer.ToggleTextField(true); //включение текстового поля
-        _phraseViewer.SetPhraseBubble(unit.Type);  //подбор цвета пузыря и вывод текста
+        _phraseViewer.ToggleBubble(true);
+        _phraseViewer.ToggleTextField(true);
+        _phraseViewer.SetPhraseBubble(unit.Type);
         _phraseViewer.SetPhrase(phrase);
 
         if(unit.HasEmotions)
@@ -83,13 +83,13 @@ public class UnitViewHandler : MonoBehaviour
     {
         _phraseViewer.ToggleBubble(false);
 
-        if (unit.HideCharacterOnFinish)  //проверка на выезд персонажа в конце юнита
+        if (unit.HideCharacterOnFinish)
         {
             _characterViewer.MoveCharacter(false);
             yield return _delay;
         }
 
-        if (unit.FadeIn)  //проверка на фейдинг в конце юнита
+        if (unit.FadeIn)
         {
             _fader.FadeIn();
             yield return _delay;
@@ -101,12 +101,12 @@ public class UnitViewHandler : MonoBehaviour
         UnitCompleted?.Invoke();
     }
 
-    public void OnVariantPrepared(string phrase, int index, StoryUnit unit) //после нажатия игроком на кнопку выбора сюжета, вызывается для каждой фразы в юните.
+    public void OnVariantPrepared(string phrase, int index, StoryUnit unit)
     {
         _phraseViewer.ToggleBubble(true);
-        _phraseViewer.ToggleTextField(false); //отключаем текстовое поле, если оно включено чтобы кнопки спавнились корректно
-        _phraseViewer.SetPhraseBubble(unit.Type); //подбор пузыря
-        _variantViewer.AddVariant(phrase, index, out VariantButton button); //спавним кнопку
+        _phraseViewer.ToggleTextField(false); 
+        _phraseViewer.SetPhraseBubble(unit.Type);
+        _variantViewer.AddVariant(phrase, index, out VariantButton button);
         VariantButtonSpawned?.Invoke(button); 
     }
 

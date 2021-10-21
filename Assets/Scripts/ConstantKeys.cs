@@ -1,10 +1,9 @@
-using UnityEngine;
-
 public static class ConstantKeys
 {
     public static class GlobalKeys
     {
-        public const float Delay = 0.5f;
+        public const float Delay = 0.35f;
+        public const float AnimationMixDuration = 1;
     }
 
     public enum PhraseTypes
@@ -38,7 +37,7 @@ public static class ConstantKeys
         disappointment,
         sad,
         smiling,
-        embarrassment,
+        embarrasment,
         delight,
         anger,
         aggression,
@@ -73,15 +72,32 @@ public static class ConstantKeys
 
     public enum Backgrounds
     {
-        cherdak,
-        photo_album,
-        opened_album,
-        stair_day,
-        door_closed_day_wide,
-        door_closed_night_wide,
-        door_opened_day_wide,
-        door_opened_night_wide,
-        badroom_morning_wide,
-        badroom_night_wide
+        OP_stair_night,
+        OP_stair_day,
+        OP_photo_album,
+        OP_opened_album,
+        OP_kitchen_night_wide,
+        OP_kitchen_day_wide,
+        OP_kitchen2_day,
+        OP_kitchen2_night,
+        OP_incoming_call,
+        OP_door_opened_night_wide,
+        OP_door_opened_day_wide,
+        OP_door_closed_night_wide,
+        OP_door_closed_day_wide,
+        OP_cherdak,
+        OP_bedroom_night_wide,
+        OP_bedroom_morning_wide,
+        OP_basket,
+        OP_DV_house1_night_wide,
+        OP_DV_house1_day_wide,
+        OP_knopas_room_day,
+        OP_knopas_room_night,
+        OP_DV_window_day,
+        OP_DV_window_night,
+        OP_DV_secret_door_night_wide,
+        OP_DV_secret_door_day_wide,
+        OP_DV_house_night_wide,
+        OP_DV_house_day_wide,
     }
 }

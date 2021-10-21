@@ -16,11 +16,11 @@ MonoBehaviour:
   - "\u041A\u043E\u043D\u0435\u0447\u043D\u043E. \u0421\u043F\u043E\u043A\u043E\u0439\u043D\u043E\u0439
     \u043D\u043E\u0447\u0438."
   _type: 4
-  _emotion: 0
-  _background: 0
+  _emotions: 13000000
+  _background: 9
   _character: 1
-  _showCharacterOnStart: 0
-  _hideCharacterOnFinish: 0
+  _showCharacterOnStart: 1
+  _hideCharacterOnFinish: 1
   _fadeIn: 0
-  _fadeOut: 0
+  _fadeOut: 1
   _lastUnitInPart: 0

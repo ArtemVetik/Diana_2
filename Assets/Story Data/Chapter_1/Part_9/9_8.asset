@@ -15,16 +15,12 @@ MonoBehaviour:
   Phrases:
   - "\u0418 \u043E\u043D \u0441\u0434\u0435\u043B\u0430\u043B \u0448\u0430\u0433
     \u043D\u0430\u0437\u0430\u0434."
-  - "\u0414\u0438\u0430\u043D\u0430 \u0445\u043E\u0442\u0435\u043B\u0430 \u0437\u0430\u043A\u0440\u044B\u0442\u044C
-    \u0434\u0432\u0435\u0440\u044C."
-  - "\u041D\u043E \u0437\u0435\u043B\u0435\u043D\u044B\u0435 \u0433\u043B\u0430\u0437\u0430
-    \u043D\u0435 \u043E\u0442\u043F\u0443\u0441\u043A\u0430\u043B\u0438 \u0435\u0435."
   _type: 2
-  _emotion: 0
-  _background: 0
-  _character: 0
+  _emotions: 0d000000
+  _background: 9
+  _character: 1
   _showCharacterOnStart: 0
-  _hideCharacterOnFinish: 0
-  _fadeIn: 0
+  _hideCharacterOnFinish: 1
+  _fadeIn: 1
   _fadeOut: 0
   _lastUnitInPart: 0

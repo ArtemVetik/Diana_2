@@ -33,6 +33,8 @@ public class StoryUnit : ScriptableObject
     {
         if (_type == ConstantKeys.PhraseTypes.Author || _type == ConstantKeys.PhraseTypes.Choise)
         {
+            _emotions.Clear();
+
             foreach (var phrase in Phrases)
             {
                 _emotions.Add(ConstantKeys.Emotions.normal);

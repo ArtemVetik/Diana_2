@@ -27,9 +27,17 @@ public class EmotionViewer : MonoBehaviour
     {
         if (_emotionToView != emotion)
         {
-            _emotionToView = emotion;
-            var newTrack = _currentSkeleton.state.SetAnimation(0, emotion.ToString(), true);
-            newTrack.MixDuration = ConstantKeys.GlobalKeys.AnimationMixDuration;
+            if(IsAnimationAvailable(emotion.ToString()))
+            {
+                _emotionToView = emotion;
+                var newTrack = _currentSkeleton.state.SetAnimation(0, emotion.ToString(), true);
+                newTrack.MixDuration = ConstantKeys.GlobalKeys.AnimationMixDuration;
+            }
+            else
+            {
+                Debug.LogError($"Emotion {emotion} doesn't found in {_currentSkeleton.name}");
+            }
+            
         }
         else return;
     }
@@ -38,5 +46,20 @@ public class EmotionViewer : MonoBehaviour
     {
         var newTrack = _currentSkeleton.state.SetAnimation(0, ConstantKeys.Emotions.normal.ToString(), true);
         newTrack.MixDuration = ConstantKeys.GlobalKeys.AnimationMixDuration;
+    }
+
+    private bool IsAnimationAvailable(string name)
+    {
+        var animations = _currentSkeleton.skeleton.Data.Animations;
+
+        foreach(var animation in animations)
+        {
+            if(animation.Name == name)
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 }

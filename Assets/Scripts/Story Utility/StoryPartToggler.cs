@@ -33,7 +33,15 @@ public class StoryPartToggler : MonoBehaviour
         Part_17,
         Part_18,
         Part_19,
-        Part_20
+        Part_20,
+        Part_21,
+        Part_22,
+        Part_23,
+        Part_24,
+        Part_25,
+        Part_26,
+        Part_27,
+        Part_28,
     }
 #endif
 
@@ -106,8 +114,6 @@ public class StoryPartToggler : MonoBehaviour
     private void OnNewVariantPartNeeded(int variantIndex)
     {
         _index++;
-
-        Debug.LogError("On New Varian Part Needed " + variantIndex);
 
         var chosenPart = _variablePartVariants[variantIndex];
         _teller.InitializeStory(chosenPart);

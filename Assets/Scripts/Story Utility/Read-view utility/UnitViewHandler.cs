@@ -20,10 +20,13 @@ public class UnitViewHandler : MonoBehaviour
     [SerializeField] private VariantButton _variantButtonTemplate;
 
     private WaitForSeconds _delay = new WaitForSeconds(ConstantKeys.GlobalKeys.Delay);
+    private StoryUnit _currentUnit;
+    private int _chosenVariant;
+    private List<VariantButton> _buttonsPool = new List<VariantButton>();
 
-    public event UnityAction<VariantButton> VariantButtonSpawned;
     public event UnityAction UnitViewed;
-    public event UnityAction UnitCompleted;
+    public event UnityAction StandartUnitCompleted;
+    public event UnityAction<int> VariantUnitCompleted;
 
     private void OnEnable()
     {
@@ -39,24 +42,25 @@ public class UnitViewHandler : MonoBehaviour
 
     public void OnUnitReaded(string phrase, StoryUnit unit, int index)
     {
-        StartCoroutine(ShowUnit(phrase, unit, index));
+        _currentUnit = unit;
+        StartCoroutine(ShowUnit(phrase, index));
     }
 
-    private IEnumerator ShowUnit(string phrase, StoryUnit unit, int index)
+    private IEnumerator ShowUnit(string phrase, int index)
     {
         if (index == 0)
         {
-            _backgroundViewer.SetBackground(unit.Background);
+            _backgroundViewer.SetBackground(_currentUnit.Background);
 
-            if (unit.FadeOut)
+            if (_currentUnit.FadeOut)
             {
                 _fader.FadeOut();
                 yield return _delay;
             }
 
-            if (unit.ShowCharacterOnStart)
+            if (_currentUnit.ShowCharacterOnStart)
             {
-                _characterViewer.InitCharacter(unit.Character);
+                _characterViewer.InitCharacter(_currentUnit.Character);
                 _characterViewer.MoveCharacter(true);
 
                 yield return _delay;
@@ -66,30 +70,29 @@ public class UnitViewHandler : MonoBehaviour
         {
             yield return _delay;
         }
-        _phraseViewer.ToggleBubble(true);
-        _phraseViewer.ToggleTextField(true);
-        _phraseViewer.SetPhraseBubble(unit.Type);
-        _phraseViewer.SetPhrase(phrase);
 
-        if(unit.HasEmotions)
+        _phraseViewer.ViewStandartUnit(_currentUnit.Type, phrase);
+        
+
+        if(_currentUnit.HasEmotions)
         {
-            _emotionViewer.ShowEmotion(unit.GetEmotion(index));
+            _emotionViewer.ShowEmotion(_currentUnit.GetEmotion(index));
         }
 
         UnitViewed?.Invoke();
     }
 
-    public IEnumerator ShowFinishActions(StoryUnit unit)
+    public IEnumerator ShowFinishActions()
     {
         _phraseViewer.ToggleBubble(false);
 
-        if (unit.HideCharacterOnFinish)
+        if (_currentUnit.HideCharacterOnFinish)
         {
             _characterViewer.MoveCharacter(false);
             yield return _delay;
         }
 
-        if (unit.FadeIn)
+        if (_currentUnit.FadeIn)
         {
             _fader.FadeIn();
             yield return _delay;
@@ -98,25 +101,44 @@ public class UnitViewHandler : MonoBehaviour
         _emotionViewer.ResetEmotion();
 
         yield return _delay;
-        UnitCompleted?.Invoke();
+
+        if(!(_currentUnit is VariantUnit))
+        {
+            StandartUnitCompleted?.Invoke();
+        }
+        else
+        {
+            VariantUnitCompleted?.Invoke(_chosenVariant);
+        }
     }
 
     public void OnVariantPrepared(string phrase, int index, StoryUnit unit)
     {
-        _phraseViewer.ToggleBubble(true);
-        _phraseViewer.ToggleTextField(false); 
-        _phraseViewer.SetPhraseBubble(unit.Type);
+        _currentUnit = unit;
+
+        _phraseViewer.ViewVariableUnit();
+
         _variantViewer.AddVariant(phrase, index, out VariantButton button);
-        VariantButtonSpawned?.Invoke(button); 
+
+        button.VariantChosen += OnVariantChosen;
+        _buttonsPool.Add(button);
     }
 
-    public void ClearUnitView(List<VariantButton> buttons)
+    private void OnVariantChosen(int index)
     {
-        foreach (var button in buttons)
+        _chosenVariant = index;
+        ClearButtons();
+        StartCoroutine(ShowFinishActions());
+    }
+
+    private void ClearButtons()
+    {
+        foreach (var button in _buttonsPool)
         {
+            button.VariantChosen -= OnVariantChosen;
             Destroy(button.gameObject);
         }
         
-        buttons.Clear();
+        _buttonsPool.Clear();
     }
 }

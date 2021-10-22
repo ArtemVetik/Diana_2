@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e2dbeb720c91e4e94f88225038ad3c, type: 3}
+  m_Name: 11_1
+  m_EditorClassIdentifier: 
+  Phrases:
+  - "\u0428\u0432\u044B\u0440\u043D\u0443\u0442\u044C \u0431\u043E\u043A\u0430\u043B
+    \u0432 \u0431\u0440\u0430\u0442\u0446\u0430."
+  - "\u0420\u0430\u0437\u0431\u0438\u0442\u044C \u0431\u043E\u043A\u0430\u043B \u043E\u0431
+    \u0441\u0442\u0435\u043D\u0443"
+  _type: 3
+  _emotions: 0d0000000d000000
+  _background: 17
+  _character: 2
+  _showCharacterOnStart: 0
+  _hideCharacterOnFinish: 1
+  _fadeIn: 0
+  _fadeOut: 0
+  _lastUnitInPart: 1
+  _nextParts:
+  - {fileID: 11400000, guid: a3f3ddc73e645c24ab1dd7619999d8c2, type: 2}
+  - {fileID: 11400000, guid: 958b594b86a5e0648a60bd351a8145e9, type: 2}

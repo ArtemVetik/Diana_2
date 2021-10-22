@@ -12,8 +12,7 @@ public class StoryTeller : MonoBehaviour
 
     private int _unitIndex = -1;
     private StoryUnit _actualUnit;
-    private bool _variantsPrepared = false;
-    private List<VariantButton> _buttonsPool = new List<VariantButton>();
+    private bool _variantsShowed = false;
     private bool _clickAvailable = true;
 
     public event UnityAction NewPartNeeded;
@@ -22,16 +21,16 @@ public class StoryTeller : MonoBehaviour
     private void OnEnable()
     {
         _reader.UnitPhrasesEnded += OnUnitPhrasesEnded;
-        _viewer.UnitCompleted += OnUnitCompleted;
-        _viewer.VariantButtonSpawned += OnVariantButtonSpawned;
+        _viewer.StandartUnitCompleted += OnStandartUnitCompleted;
+        _viewer.VariantUnitCompleted += OnVariantUnitCompleted;
         _viewer.UnitViewed += OnUnitViewed;
     }
 
     private void OnDisable()
     {
         _reader.UnitPhrasesEnded -= OnUnitPhrasesEnded;
-        _viewer.UnitCompleted -= OnUnitCompleted;
-        _viewer.VariantButtonSpawned -= OnVariantButtonSpawned;
+        _viewer.StandartUnitCompleted -= OnStandartUnitCompleted;
+        _viewer.VariantUnitCompleted -= OnVariantUnitCompleted;
         _viewer.UnitViewed -= OnUnitViewed;
     }
 
@@ -42,7 +41,7 @@ public class StoryTeller : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0) && !_variantsPrepared && _clickAvailable)
+        if (Input.GetMouseButtonDown(0) && !_variantsShowed && _clickAvailable)
         {
             _clickAvailable = false;
             ReadUnit();
@@ -75,7 +74,7 @@ public class StoryTeller : MonoBehaviour
         else
         {
             _reader.PrepareVariants(_actualUnit);
-            _variantsPrepared = true;
+            _variantsShowed = true;
         }
     }
 
@@ -86,10 +85,10 @@ public class StoryTeller : MonoBehaviour
 
     private void OnUnitPhrasesEnded()
     {
-        StartCoroutine(_viewer.ShowFinishActions(_actualUnit));
+        StartCoroutine(_viewer.ShowFinishActions());
     }
 
-    private void OnUnitCompleted()
+    private void OnStandartUnitCompleted()
     {
         if (!_actualUnit.LastUnitInPart)
         {
@@ -106,23 +105,9 @@ public class StoryTeller : MonoBehaviour
         }
     }
 
-    public void OnVariantButtonSpawned(VariantButton button)
+    private void OnVariantUnitCompleted(int index)
     {
-        button.VariantChosen += OnVariantChosen;
-        _buttonsPool.Add(button);
-    }
-
-    public void OnVariantChosen(int index)  //добавить завершающие действия для вариативных юнитов
-    {
-        _variantsPrepared = false;
-
-        foreach (var button in _buttonsPool)
-        {
-            button.VariantChosen -= OnVariantChosen;
-        }
-
-        _viewer.ClearUnitView(_buttonsPool);
-
         NewVariantPartNeeded?.Invoke(index);
+        _variantsShowed = false;
     }
 }

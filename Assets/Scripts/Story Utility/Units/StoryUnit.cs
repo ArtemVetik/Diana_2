@@ -31,7 +31,7 @@ public class StoryUnit : ScriptableObject
 
     protected virtual void OnValidate()
     {
-        if (_type == ConstantKeys.PhraseTypes.Author || _type == ConstantKeys.PhraseTypes.Choise)
+       /* if (_type == ConstantKeys.PhraseTypes.Author || _type == ConstantKeys.PhraseTypes.Choise)
         {
             _emotions.Clear();
 
@@ -39,7 +39,7 @@ public class StoryUnit : ScriptableObject
             {
                 _emotions.Add(ConstantKeys.Emotions.normal);
             }
-        }
+        }*/
     }
 
     public string GetPhrase(int index)

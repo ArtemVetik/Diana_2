@@ -50,4 +50,19 @@ public class PhraseViewer : MonoBehaviour
     {
         _bubble.gameObject.SetActive(value);
     }
+
+    public void ViewStandartUnit(ConstantKeys.PhraseTypes type, string phrase)
+    {
+        ToggleBubble(true);
+        ToggleTextField(true);
+        SetPhraseBubble(type);
+        SetPhrase(phrase);
+    }
+
+    public void ViewVariableUnit()
+    {
+        ToggleBubble(true);
+        ToggleTextField(false);
+        SetPhraseBubble(ConstantKeys.PhraseTypes.Choise);
+    }
 }

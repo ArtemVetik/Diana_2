@@ -1,0 +1,216 @@
+
+Grandma_Mateo.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Belki
+  rotate: false
+  xy: 882, 18
+  size: 109, 42
+  orig: 109, 42
+  offset: 0, 0
+  index: -1
+Body
+  rotate: false
+  xy: 1046, 339
+  size: 458, 878
+  orig: 460, 878
+  offset: 0, 0
+  index: -1
+Body_light
+  rotate: true
+  xy: 2, 34
+  size: 458, 878
+  orig: 460, 878
+  offset: 0, 0
+  index: -1
+Brow_left
+  rotate: true
+  xy: 972, 284
+  size: 51, 17
+  orig: 52, 17
+  offset: 0, 0
+  index: -1
+Brow_right
+  rotate: false
+  xy: 957, 101
+  size: 52, 17
+  orig: 52, 17
+  offset: 0, 0
+  index: -1
+Face
+  rotate: true
+  xy: 1628, 1721
+  size: 178, 243
+  orig: 181, 243
+  offset: 2, 0
+  index: -1
+Hand_left
+  rotate: false
+  xy: 1506, 490
+  size: 134, 827
+  orig: 139, 827
+  offset: 0, 0
+  index: -1
+Hear_bg
+  rotate: false
+  xy: 1366, 1648
+  size: 260, 251
+  orig: 260, 253
+  offset: 0, 2
+  index: -1
+Hear_top
+  rotate: false
+  xy: 1367, 1319
+  size: 224, 219
+  orig: 224, 221
+  offset: 0, 0
+  index: -1
+Hear_top_light
+  rotate: false
+  xy: 1593, 1427
+  size: 224, 219
+  orig: 224, 221
+  offset: 0, 0
+  index: -1
+Leg_left
+  rotate: true
+  xy: 2, 494
+  size: 505, 1042
+  orig: 505, 1062
+  offset: 0, 20
+  index: -1
+Leg_left_light
+  rotate: true
+  xy: 322, 1539
+  size: 505, 1042
+  orig: 505, 1062
+  offset: 0, 20
+  index: -1
+Leg_right
+  rotate: false
+  xy: 2, 1001
+  size: 318, 1043
+  orig: 341, 1052
+  offset: 23, 0
+  index: -1
+Leg_right_light
+  rotate: true
+  xy: 322, 1219
+  size: 318, 1043
+  orig: 341, 1052
+  offset: 23, 0
+  index: -1
+Lips_bottom
+  rotate: false
+  xy: 932, 68
+  size: 60, 17
+  orig: 62, 17
+  offset: 1, 0
+  index: -1
+Lips_top
+  rotate: false
+  xy: 957, 88
+  size: 60, 11
+  orig: 62, 11
+  offset: 0, 0
+  index: -1
+Lokon_left
+  rotate: true
+  xy: 882, 203
+  size: 132, 88
+  orig: 132, 88
+  offset: 0, 0
+  index: -1
+Lokon_right
+  rotate: true
+  xy: 1366, 1540
+  size: 106, 150
+  orig: 106, 152
+  offset: 0, 2
+  index: -1
+Nose
+  rotate: false
+  xy: 993, 2
+  size: 42, 64
+  orig: 48, 66
+  offset: 4, 2
+  index: -1
+Obod
+  rotate: true
+  xy: 882, 62
+  size: 139, 48
+  orig: 151, 49
+  offset: 8, 1
+  index: -1
+Pidjak
+  rotate: true
+  xy: 1038, 52
+  size: 285, 872
+  orig: 285, 886
+  offset: 0, 6
+  index: -1
+Poyas
+  rotate: false
+  xy: 1642, 688
+  size: 97, 737
+  orig: 99, 737
+  offset: 0, 0
+  index: -1
+Sharf
+  rotate: true
+  xy: 322, 1012
+  size: 205, 247
+  orig: 206, 247
+  offset: 1, 0
+  index: -1
+Sharf_light
+  rotate: true
+  xy: 571, 1012
+  size: 205, 247
+  orig: 206, 247
+  offset: 1, 0
+  index: -1
+Sheya
+  rotate: false
+  xy: 882, 337
+  size: 154, 155
+  orig: 155, 155
+  offset: 0, 0
+  index: -1
+Veki
+  rotate: true
+  xy: 932, 87
+  size: 114, 23
+  orig: 115, 25
+  offset: 0, 0
+  index: -1
+Zrachki
+  rotate: true
+  xy: 957, 120
+  size: 81, 16
+  orig: 82, 16
+  offset: 1, 0
+  index: -1
+Zubi
+  rotate: true
+  xy: 972, 226
+  size: 56, 13
+  orig: 56, 13
+  offset: 0, 0
+  index: -1
+hand_right
+  rotate: true
+  xy: 1366, 1901
+  size: 143, 525
+  orig: 146, 525
+  offset: 0, 0
+  index: -1
+hand_right_light
+  rotate: true
+  xy: 1506, 345
+  size: 143, 525
+  orig: 146, 525
+  offset: 0, 0
+  index: -1

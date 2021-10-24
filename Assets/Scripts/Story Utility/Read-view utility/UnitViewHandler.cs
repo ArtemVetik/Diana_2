@@ -73,7 +73,6 @@ public class UnitViewHandler : MonoBehaviour
 
         _phraseViewer.ViewStandartUnit(_currentUnit.Type, phrase);
         
-
         if(_currentUnit.HasEmotions)
         {
             _emotionViewer.ShowEmotion(_currentUnit.GetEmotion(index));

@@ -1,0 +1,230 @@
+
+Mateo.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Belki
+  rotate: false
+  xy: 1261, 1790
+  size: 114, 53
+  orig: 115, 54
+  offset: 1, 1
+  index: -1
+Body
+  rotate: true
+  xy: 1103, 684
+  size: 512, 754
+  orig: 512, 756
+  offset: 0, 0
+  index: -1
+Body_light
+  rotate: true
+  xy: 2, 438
+  size: 512, 754
+  orig: 512, 756
+  offset: 0, 0
+  index: -1
+Brow_left
+  rotate: false
+  xy: 129, 1825
+  size: 56, 18
+  orig: 56, 18
+  offset: 0, 0
+  index: -1
+Brow_right
+  rotate: false
+  xy: 498, 1816
+  size: 62, 27
+  orig: 62, 27
+  offset: 0, 0
+  index: -1
+Eyes_obod
+  rotate: false
+  xy: 1377, 1790
+  size: 137, 53
+  orig: 138, 55
+  offset: 1, 1
+  index: -1
+Hand_left
+  rotate: true
+  xy: 1013, 1617
+  size: 171, 464
+  orig: 177, 464
+  offset: 6, 0
+  index: -1
+Hand_left_light
+  rotate: true
+  xy: 820, 1444
+  size: 171, 464
+  orig: 177, 464
+  offset: 6, 0
+  index: -1
+Hand_right
+  rotate: true
+  xy: 2, 1671
+  size: 140, 816
+  orig: 140, 816
+  offset: 0, 0
+  index: -1
+Hand_right_light
+  rotate: true
+  xy: 2, 1529
+  size: 140, 816
+  orig: 140, 816
+  offset: 0, 0
+  index: -1
+Hear
+  rotate: true
+  xy: 270, 1294
+  size: 233, 260
+  orig: 233, 260
+  offset: 0, 0
+  index: -1
+Hear_bg
+  rotate: false
+  xy: 1479, 1500
+  size: 214, 239
+  orig: 214, 239
+  offset: 0, 0
+  index: -1
+Hear_light
+  rotate: true
+  xy: 532, 1294
+  size: 233, 260
+  orig: 233, 260
+  offset: 0, 0
+  index: -1
+Leg_left
+  rotate: true
+  xy: 758, 343
+  size: 339, 1249
+  orig: 346, 1249
+  offset: 0, 0
+  index: -1
+Leg_left_light
+  rotate: true
+  xy: 2, 2
+  size: 339, 1249
+  orig: 346, 1249
+  offset: 0, 0
+  index: -1
+Leg_right
+  rotate: true
+  xy: 794, 1198
+  size: 244, 1099
+  orig: 263, 1099
+  offset: 0, 0
+  index: -1
+Leg_right_light
+  rotate: true
+  xy: 2, 952
+  size: 244, 1099
+  orig: 263, 1099
+  offset: 0, 0
+  index: -1
+Lips_bottom
+  rotate: false
+  xy: 187, 1821
+  size: 65, 22
+  orig: 65, 22
+  offset: 0, 0
+  index: -1
+Lips_top
+  rotate: false
+  xy: 2, 1827
+  size: 65, 16
+  orig: 65, 16
+  offset: 0, 0
+  index: -1
+Lokon
+  rotate: true
+  xy: 1516, 1741
+  size: 102, 196
+  orig: 102, 196
+  offset: 0, 0
+  index: -1
+Nose
+  rotate: true
+  xy: 1188, 1803
+  size: 40, 71
+  orig: 40, 71
+  offset: 0, 0
+  index: -1
+Sheya
+  rotate: true
+  xy: 1714, 1666
+  size: 177, 191
+  orig: 185, 197
+  offset: 0, 6
+  index: -1
+Sheya_light
+  rotate: true
+  xy: 820, 1633
+  size: 177, 191
+  orig: 185, 197
+  offset: 0, 6
+  index: -1
+Uho_left
+  rotate: true
+  xy: 1122, 1811
+  size: 32, 64
+  orig: 32, 64
+  offset: 0, 0
+  index: -1
+Uho_right
+  rotate: true
+  xy: 651, 1815
+  size: 28, 68
+  orig: 29, 76
+  offset: 0, 0
+  index: -1
+Veki
+  rotate: false
+  xy: 721, 1813
+  size: 113, 30
+  orig: 114, 31
+  offset: 1, 1
+  index: -1
+Visulka_left
+  rotate: true
+  xy: 254, 1817
+  size: 26, 242
+  orig: 26, 242
+  offset: 0, 0
+  index: -1
+Visulka_right
+  rotate: true
+  xy: 836, 1812
+  size: 31, 284
+  orig: 32, 284
+  offset: 0, 0
+  index: -1
+Zrachki
+  rotate: false
+  xy: 562, 1816
+  size: 87, 27
+  orig: 88, 31
+  offset: 1, 1
+  index: -1
+Zubi
+  rotate: false
+  xy: 69, 1827
+  size: 58, 16
+  orig: 59, 17
+  offset: 1, 0
+  index: -1
+face_bg
+  rotate: true
+  xy: 1695, 1486
+  size: 178, 266
+  orig: 181, 266
+  offset: 0, 0
+  index: -1
+face_wish
+  rotate: true
+  xy: 2, 1349
+  size: 178, 266
+  orig: 181, 266
+  offset: 0, 0
+  index: -1

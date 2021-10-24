@@ -85,7 +85,7 @@ public static class ConstantKeys
         OP_door_opened_day_wide,
         OP_door_closed_night_wide,
         OP_door_closed_day_wide,
-        OP_cherdak,
+        OP_attic,
         OP_bedroom_night_wide,
         OP_bedroom_morning_wide,
         OP_basket,

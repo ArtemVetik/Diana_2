@@ -40,7 +40,7 @@ public class StoryTeller : MonoBehaviour
     }
 
     private void Update()
-    {
+    {        
         if (Input.GetMouseButtonDown(0) && !_variantsShowed && _clickAvailable)
         {
             _clickAvailable = false;

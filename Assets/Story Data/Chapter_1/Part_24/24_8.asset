@@ -23,7 +23,7 @@ MonoBehaviour:
   _emotions: 1a0000000700000007000000
   _background: 5
   _character: 0
-  _showCharacterOnStart: 1
+  _showCharacterOnStart: 0
   _hideCharacterOnFinish: 1
   _fadeIn: 0
   _fadeOut: 0

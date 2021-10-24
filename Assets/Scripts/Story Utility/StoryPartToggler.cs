@@ -1,5 +1,7 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(StoryTeller))]
 public class StoryPartToggler : MonoBehaviour
@@ -7,11 +9,12 @@ public class StoryPartToggler : MonoBehaviour
     [SerializeField] List<StoryPart> _storyParts = new List<StoryPart>();
     [SerializeField] private StoryTeller _teller;
 
-#if UNITY_EDITOR
+
     [SerializeField] private Part _partToLoad;
     [SerializeField] private Fader _fader;
     [SerializeField] private bool _defaultStoryNumeration = true;
-
+    [SerializeField] private Dropdown _dropDown;
+    [SerializeField] private GameObject _loadCanvas;
     private enum Part
     {
         Part_1,
@@ -43,7 +46,7 @@ public class StoryPartToggler : MonoBehaviour
         Part_27,
         Part_28,
     }
-#endif
+
 
     private List<StoryPart> _variablePartVariants = new List<StoryPart>();
     private int _index = -1;
@@ -51,6 +54,7 @@ public class StoryPartToggler : MonoBehaviour
 
     private void OnEnable()
     {
+        CreateDropDownMenu();
         _teller.NewPartNeeded += OnNewPartNeeded;
         _teller.NewVariantPartNeeded += OnNewVariantPartNeeded;
     }
@@ -61,10 +65,44 @@ public class StoryPartToggler : MonoBehaviour
         _teller.NewVariantPartNeeded -= OnNewVariantPartNeeded;
     }
 
-#if UNITY_EDITOR
+    private void CreateDropDownMenu()
+    {
+        List<string> dropOptions = new List<string>();
+
+        var parts = Enum.GetValues(typeof(Part));
+
+        foreach (var part in parts)
+        {
+            dropOptions.Add(part.ToString());
+        }
+
+        _dropDown.AddOptions(dropOptions);
+    }
+
+    public void LoadPart(int index)
+    {
+        StoryPart nextPart = _storyParts[index];
+
+        if (nextPart.Variable)
+        {
+            var variant = nextPart.GetVariantUnit();
+            _variablePartVariants.Clear();
+
+            for (int i = 0; i < variant.NextPartsLength; i++)
+            {
+                _variablePartVariants.Add(variant.GetNextPart(i));
+            }
+        }
+
+        _teller.InitializeStory(nextPart);
+
+        _loadCanvas.SetActive(false);
+    }
+
     private void OnNewPartNeeded()
     {
         StoryPart nextPart;
+        Debug.LogError("NEW PART NEEDED");
 
         if (!_defaultStoryNumeration)
         {
@@ -75,7 +113,14 @@ public class StoryPartToggler : MonoBehaviour
         }
         else
         {
-            nextPart = _storyParts[++_index];
+            ++_index;
+            if (EndStoryVerification(_index))
+            {
+                Debug.LogError(_index + " STORY END");
+                return;
+            }
+
+            nextPart = _storyParts[_index];
         }
 
         if (nextPart.Variable)
@@ -91,25 +136,6 @@ public class StoryPartToggler : MonoBehaviour
 
         _teller.InitializeStory(nextPart);
     }
-#else
-    private void OnNewPartNeeded()
-    {
-        var nextPart = _storyParts[++index];
-
-        if(nextPart.Variable)
-        {
-            var variant= nextPart.GetVariantUnit();
-            _variablePartVariants.Clear();
-
-            for (int i = 0; i < variant.NextPartsLength; i++)
-            {
-                _variablePartVariants.Add(variant.GetNextPart(i));
-            }
-        }
-
-        _teller.InitializeStory(nextPart);
-    }
-#endif
 
     private void OnNewVariantPartNeeded(int variantIndex)
     {
@@ -138,5 +164,15 @@ public class StoryPartToggler : MonoBehaviour
         }
     }
 
-    //сделать проверку на конец листа
+    private bool EndStoryVerification(int index)
+    {
+        if(index == _storyParts.Count)
+        {
+            _loadCanvas.SetActive(true);
+            return true;
+        }
+
+        return false;
+    }
+
 }

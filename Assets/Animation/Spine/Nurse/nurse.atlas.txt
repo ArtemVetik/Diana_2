@@ -1,0 +1,209 @@
+
+nurse.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Arrogance
+  rotate: true
+  xy: 2, 1256
+  size: 166, 206
+  orig: 167, 206
+  offset: 0, 0
+  index: -1
+Belki
+  rotate: false
+  xy: 200, 1543
+  size: 104, 38
+  orig: 104, 38
+  offset: 0, 0
+  index: -1
+Body
+  rotate: true
+  xy: 2, 2
+  size: 430, 999
+  orig: 433, 999
+  offset: 0, 0
+  index: -1
+Body_light
+  rotate: true
+  xy: 1003, 2
+  size: 430, 999
+  orig: 433, 999
+  offset: 0, 0
+  index: -1
+Compassion
+  rotate: true
+  xy: 971, 1163
+  size: 166, 206
+  orig: 167, 206
+  offset: 0, 0
+  index: -1
+Disturbance
+  rotate: true
+  xy: 1179, 1137
+  size: 166, 206
+  orig: 167, 206
+  offset: 0, 0
+  index: -1
+Fear
+  rotate: true
+  xy: 1387, 1137
+  size: 166, 206
+  orig: 167, 206
+  offset: 0, 0
+  index: -1
+Flirting
+  rotate: true
+  xy: 1595, 1137
+  size: 166, 206
+  orig: 167, 206
+  offset: 0, 0
+  index: -1
+Hand_left
+  rotate: true
+  xy: 403, 1331
+  size: 132, 786
+  orig: 134, 787
+  offset: 0, 0
+  index: -1
+Hand_right
+  rotate: true
+  xy: 461, 1465
+  size: 116, 790
+  orig: 116, 790
+  offset: 0, 0
+  index: -1
+Hand_right_light
+  rotate: true
+  xy: 1253, 1465
+  size: 116, 790
+  orig: 116, 790
+  offset: 0, 0
+  index: -1
+Hear_bg
+  rotate: false
+  xy: 1042, 913
+  size: 235, 222
+  orig: 235, 222
+  offset: 0, 0
+  index: -1
+Hear_forvard
+  rotate: true
+  xy: 1279, 776
+  size: 359, 370
+  orig: 359, 370
+  offset: 0, 0
+  index: -1
+Hear_light
+  rotate: true
+  xy: 1651, 776
+  size: 359, 370
+  orig: 359, 370
+  offset: 0, 0
+  index: -1
+Hope
+  rotate: true
+  xy: 1803, 1137
+  size: 166, 206
+  orig: 167, 206
+  offset: 0, 0
+  index: -1
+Leg_left
+  rotate: true
+  xy: 1191, 1305
+  size: 158, 759
+  orig: 158, 759
+  offset: 0, 0
+  index: -1
+Leg_left_light
+  rotate: true
+  xy: 210, 1171
+  size: 158, 759
+  orig: 158, 759
+  offset: 0, 0
+  index: -1
+Leg_right
+  rotate: true
+  xy: 2, 661
+  size: 340, 775
+  orig: 340, 775
+  offset: 0, 0
+  index: -1
+Leg_right_light
+  rotate: true
+  xy: 779, 434
+  size: 340, 775
+  orig: 340, 775
+  offset: 0, 0
+  index: -1
+Lokon
+  rotate: true
+  xy: 252, 1378
+  size: 148, 149
+  orig: 148, 149
+  offset: 0, 0
+  index: -1
+Neutral
+  rotate: true
+  xy: 2, 1088
+  size: 166, 206
+  orig: 167, 206
+  offset: 0, 0
+  index: -1
+Sheya
+  rotate: true
+  xy: 2, 1424
+  size: 117, 248
+  orig: 118, 251
+  offset: 0, 0
+  index: -1
+Smiling
+  rotate: true
+  xy: 210, 1003
+  size: 166, 206
+  orig: 167, 206
+  offset: 0, 0
+  index: -1
+Suffering
+  rotate: true
+  xy: 418, 1003
+  size: 166, 206
+  orig: 167, 206
+  offset: 0, 0
+  index: -1
+Suspicion
+  rotate: true
+  xy: 626, 1003
+  size: 166, 206
+  orig: 167, 206
+  offset: 0, 0
+  index: -1
+Ultimatum
+  rotate: true
+  xy: 834, 995
+  size: 166, 206
+  orig: 167, 206
+  offset: 0, 0
+  index: -1
+Veki
+  rotate: false
+  xy: 86, 1556
+  size: 112, 25
+  orig: 112, 25
+  offset: 0, 0
+  index: -1
+Vorotnik
+  rotate: false
+  xy: 306, 1528
+  size: 153, 53
+  orig: 153, 59
+  offset: 0, 2
+  index: -1
+Zrachki
+  rotate: false
+  xy: 2, 1566
+  size: 82, 15
+  orig: 82, 16
+  offset: 0, 0
+  index: -1

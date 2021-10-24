@@ -1,0 +1,111 @@
+
+Doctor.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body
+  rotate: true
+  xy: 2, 161
+  size: 542, 1167
+  orig: 542, 1177
+  offset: 0, 1
+  index: -1
+Body_light
+  rotate: true
+  xy: 331, 1392
+  size: 542, 1167
+  orig: 542, 1177
+  offset: 0, 1
+  index: -1
+Eyes
+  rotate: true
+  xy: 1096, 1272
+  size: 118, 45
+  orig: 119, 45
+  offset: 0, 0
+  index: -1
+Glasses
+  rotate: true
+  xy: 1048, 1193
+  size: 197, 46
+  orig: 197, 46
+  offset: 0, 0
+  index: -1
+Hand_left
+  rotate: false
+  xy: 2, 705
+  size: 327, 1229
+  orig: 327, 1229
+  offset: 0, 0
+  index: -1
+Hand_right
+  rotate: true
+  xy: 331, 1247
+  size: 143, 715
+  orig: 143, 715
+  offset: 0, 0
+  index: -1
+Hand_right_light
+  rotate: true
+  xy: 331, 1011
+  size: 143, 715
+  orig: 143, 715
+  offset: 0, 0
+  index: -1
+Head
+  rotate: false
+  xy: 901, 724
+  size: 212, 285
+  orig: 212, 286
+  offset: 0, 0
+  index: -1
+Head_light
+  rotate: true
+  xy: 1171, 2
+  size: 212, 285
+  orig: 212, 286
+  offset: 0, 0
+  index: -1
+Leg left
+  rotate: false
+  xy: 1171, 216
+  size: 186, 604
+  orig: 187, 606
+  offset: 0, 0
+  index: -1
+Leg_right
+  rotate: false
+  xy: 1171, 822
+  size: 248, 568
+  orig: 248, 568
+  offset: 0, 0
+  index: -1
+Leg_right_light
+  rotate: true
+  xy: 331, 761
+  size: 248, 568
+  orig: 248, 568
+  offset: 0, 0
+  index: -1
+Smiling
+  rotate: true
+  xy: 1359, 608
+  size: 212, 285
+  orig: 212, 286
+  offset: 0, 0
+  index: -1
+Veki
+  rotate: true
+  xy: 1096, 1156
+  size: 114, 25
+  orig: 118, 26
+  offset: 1, 1
+  index: -1
+Zrachki
+  rotate: true
+  xy: 1123, 1179
+  size: 91, 18
+  orig: 91, 18
+  offset: 0, 0
+  index: -1

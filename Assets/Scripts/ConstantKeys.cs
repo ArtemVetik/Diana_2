@@ -4,6 +4,7 @@ public static class ConstantKeys
     {
         public const float Delay = 0.35f;
         public const float AnimationMixDuration = 1;
+        public const float BackgroundMoveDuration = 4f;
     }
 
     public enum PhraseTypes
@@ -99,5 +100,11 @@ public static class ConstantKeys
         OP_DV_secret_door_day_wide,
         OP_DV_house_night_wide,
         OP_DV_house_day_wide,
+        OP_Mateos_house_day,
+        OP_Mateos_house_night,
+        OP_Dianas_house_day,
+        OP_Dianas_house_night,
+        OP_Dianas_backyard_day,
+        OP_Dianas_backyard_night
     }
 }

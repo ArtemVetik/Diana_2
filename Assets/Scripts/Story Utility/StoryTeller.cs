@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -62,7 +63,7 @@ public class StoryTeller : MonoBehaviour
         InitializeActualUnit();
         ReadUnit();
 
-        _clickAvailable = true;
+        _clickAvailable = false;
     }
 
     private void ReadUnit()

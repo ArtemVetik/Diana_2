@@ -53,10 +53,13 @@ public class PhraseViewer : MonoBehaviour
 
     public void ViewStandartUnit(ConstantKeys.PhraseTypes type, string phrase)
     {
-        ToggleBubble(true);
-        ToggleTextField(true);
-        SetPhraseBubble(type);
-        SetPhrase(phrase);
+        if(phrase != string.Empty)
+        {
+            ToggleBubble(true);
+            ToggleTextField(true);
+            SetPhraseBubble(type);
+            SetPhrase(phrase);
+        }
     }
 
     public void ViewVariableUnit()

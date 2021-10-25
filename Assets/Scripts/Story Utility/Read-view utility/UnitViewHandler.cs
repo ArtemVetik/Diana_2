@@ -20,6 +20,7 @@ public class UnitViewHandler : MonoBehaviour
     [SerializeField] private VariantButton _variantButtonTemplate;
 
     private WaitForSeconds _delay = new WaitForSeconds(ConstantKeys.GlobalKeys.Delay);
+    private WaitForSeconds _backgroundDelay = new WaitForSeconds(ConstantKeys.GlobalKeys.BackgroundMoveDuration);
     private StoryUnit _currentUnit;
     private int _chosenVariant;
     private List<VariantButton> _buttonsPool = new List<VariantButton>();
@@ -50,33 +51,52 @@ public class UnitViewHandler : MonoBehaviour
     {
         if (index == 0)
         {
-            _backgroundViewer.SetBackground(_currentUnit.Background);
-
-            if (_currentUnit.FadeOut)
-            {
-                _fader.FadeOut();
-                yield return _delay;
-            }
-
-            if (_currentUnit.ShowCharacterOnStart)
-            {
-                _characterViewer.InitCharacter(_currentUnit.Character);
-                _characterViewer.MoveCharacter(true);
-
-                yield return _delay;
-            }
+            StartCoroutine(ShowStartActions(phrase));
         }
         else
         {
+            Debug.LogError("pre-message delay");
             yield return _delay;
-        }
+            
+            _phraseViewer.ViewStandartUnit(_currentUnit.Type, phrase);
 
-        _phraseViewer.ViewStandartUnit(_currentUnit.Type, phrase);
+            UnitViewed?.Invoke();
+        }
         
         if(_currentUnit.HasEmotions)
         {
             _emotionViewer.ShowEmotion(_currentUnit.GetEmotion(index));
         }
+    }
+
+    private IEnumerator ShowStartActions(string phrase)
+    {
+        _backgroundViewer.SetBackground(_currentUnit.Background);
+        _backgroundViewer.SetBackgroundStartPosition(_currentUnit.MoveBackgroundOnStart);
+
+        if (_currentUnit.FadeOut)
+        {
+            _fader.FadeOut();
+            Debug.LogError("Fader delay");
+            yield return _delay;
+        }
+
+        if (_currentUnit.MoveBackgroundOnStart)
+        {
+            _backgroundViewer.MoveBackground();
+            Debug.LogError("bg delay");
+            yield return _backgroundDelay;
+        }
+
+        if (_currentUnit.ShowCharacterOnStart)
+        {
+            _characterViewer.InitCharacter(_currentUnit.Character);
+            _characterViewer.MoveCharacter(true);
+            Debug.LogError("char move delay");
+            yield return _delay;
+        }
+
+        _phraseViewer.ViewStandartUnit(_currentUnit.Type, phrase);
 
         UnitViewed?.Invoke();
     }
@@ -90,6 +110,8 @@ public class UnitViewHandler : MonoBehaviour
             _characterViewer.MoveCharacter(false);
             yield return _delay;
         }
+
+        //тут движение фона на финише
 
         if (_currentUnit.FadeIn)
         {

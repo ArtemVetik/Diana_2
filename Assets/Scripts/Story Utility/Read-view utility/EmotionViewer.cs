@@ -1,4 +1,5 @@
 using Spine.Unity;
+using System.Collections;
 using UnityEngine;
 
 public class EmotionViewer : MonoBehaviour
@@ -27,7 +28,7 @@ public class EmotionViewer : MonoBehaviour
     {
         if (_emotionToView != emotion)
         {
-            if(IsAnimationAvailable(emotion.ToString()))
+            if (IsAnimationAvailable(emotion.ToString()))
             {
                 _emotionToView = emotion;
                 var newTrack = _currentSkeleton.state.SetAnimation(0, emotion.ToString(), true);
@@ -52,7 +53,7 @@ public class EmotionViewer : MonoBehaviour
     {
         var animations = _currentSkeleton.skeleton.Data.Animations;
 
-        foreach(var animation in animations)
+        foreach (var animation in animations)
         {
             if(animation.Name == name)
             {

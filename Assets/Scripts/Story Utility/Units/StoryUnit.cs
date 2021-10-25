@@ -13,6 +13,7 @@ public class StoryUnit : ScriptableObject
 
     [SerializeField] private bool _showCharacterOnStart = false;
     [SerializeField] private bool _hideCharacterOnFinish = false;
+    [SerializeField] private bool _moveBackgroundOnStart = false;
     [SerializeField] private bool _fadeIn = false;
     [SerializeField] private bool _fadeOut = false;
     [SerializeField] private bool _lastUnitInPart = false;
@@ -23,24 +24,12 @@ public class StoryUnit : ScriptableObject
     public ConstantKeys.Characters Character => _character;
     public bool ShowCharacterOnStart => _showCharacterOnStart;
     public bool HideCharacterOnFinish => _hideCharacterOnFinish;
+    public bool MoveBackgroundOnStart => _moveBackgroundOnStart;
     public bool FadeIn => _fadeIn;
     public bool FadeOut => _fadeOut;
     public bool LastUnitInPart => _lastUnitInPart;
 
     public bool HasEmotions => _emotions.Count > 0;
-
-    protected virtual void OnValidate()
-    {
-       /* if (_type == ConstantKeys.PhraseTypes.Author || _type == ConstantKeys.PhraseTypes.Choise)
-        {
-            _emotions.Clear();
-
-            foreach (var phrase in Phrases)
-            {
-                _emotions.Add(ConstantKeys.Emotions.normal);
-            }
-        }*/
-    }
 
     public string GetPhrase(int index)
     {

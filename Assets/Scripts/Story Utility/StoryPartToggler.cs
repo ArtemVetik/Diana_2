@@ -102,7 +102,6 @@ public class StoryPartToggler : MonoBehaviour
     private void OnNewPartNeeded()
     {
         StoryPart nextPart;
-        Debug.LogError("NEW PART NEEDED");
 
         if (!_defaultStoryNumeration)
         {
@@ -116,7 +115,6 @@ public class StoryPartToggler : MonoBehaviour
             ++_index;
             if (EndStoryVerification(_index))
             {
-                Debug.LogError(_index + " STORY END");
                 return;
             }
 

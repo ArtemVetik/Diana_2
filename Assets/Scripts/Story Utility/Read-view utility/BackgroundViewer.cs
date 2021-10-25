@@ -1,28 +1,40 @@
-using System.Collections;
 using UnityEngine;
+using DG.Tweening;
 
 [RequireComponent(typeof(SpriteRenderer))]
 public class BackgroundViewer : MonoBehaviour
 {
-    [SerializeField] private Sprite[] _backgroundSprites;
-    [SerializeField] private SpriteRenderer _background;
+    [SerializeField] private BackgroundData[] _backgroundsData;
+    [SerializeField] private SpriteRenderer _backgroundSprite;
+
+    private BackgroundData _currentData;
 
     public void SetBackground(ConstantKeys.Backgrounds name)
     {
-        if (name.ToString() != _background.name && name.ToString() != string.Empty)
+        if (name.ToString() != _backgroundSprite.sprite.name && name.ToString() != string.Empty)
         {
-            foreach (var bg in _backgroundSprites)
+            foreach (var data in _backgroundsData)
             {
-                if (bg.name == name.ToString())
+                if (data.Sprite != null && data.Sprite.name == name.ToString())
                 {
-                    _background.sprite = bg;
+                    _currentData = data;
+                    _backgroundSprite.sprite = data.Sprite;
                     return;
                 }
             }
         }
-        else
+    }
+
+    public void SetBackgroundStartPosition(bool isMoving)
+    {
+        _backgroundSprite.transform.position = isMoving ? new Vector2(_currentData.MovementStart, _backgroundSprite.transform.position.y) : new Vector2(_currentData.FixedStart, _backgroundSprite.transform.position.y);
+    }
+
+    public void MoveBackground()
+    {
+        if(_backgroundSprite != null)
         {
-            Debug.LogError($"Background name {_background.name} = {name}!");
+            _backgroundSprite.transform.DOMoveX(_currentData.Finish, ConstantKeys.GlobalKeys.BackgroundMoveDuration);
         }
     }
 }

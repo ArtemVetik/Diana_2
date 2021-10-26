@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcd1ea30f740fc9408cd741ec35c0ac0, type: 3}
+  m_Name: 3_1
+  m_EditorClassIdentifier: 
+  Phrases:
+  - "\u041D\u0430 \u043D\u0435\u0439 \u0431\u044B\u043B \u043A\u0440\u0430\u0441\u0438\u0432\u044B\u0439
+    \u043D\u0435\u0431\u043E\u043B\u044C\u0448\u043E\u0439 \u0431\u0430\u043D\u0442."
+  _type: 2
+  _emotions: 0d000000
+  _background: 33
+  _character: 0
+  _showCharacterOnStart: 0
+  _hideCharacterOnFinish: 0
+  _moveBackgroundOnStart: 0
+  _fadeIn: 1
+  _fadeOut: 0
+  _lastUnitInPart: 0

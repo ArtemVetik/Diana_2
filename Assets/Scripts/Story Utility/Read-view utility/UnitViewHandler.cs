@@ -137,6 +137,12 @@ public class UnitViewHandler : MonoBehaviour
     {
         _currentUnit = unit;
 
+        if (_currentUnit.FadeOut)
+        {
+            _fader.FadeOut();
+            Debug.LogError("variant Fader delay");
+        }
+
         _phraseViewer.ViewVariableUnit();
 
         _variantViewer.AddVariant(phrase, index, out VariantButton button);

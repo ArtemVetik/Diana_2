@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: OP_bedroom_night_wide
   m_EditorClassIdentifier: 
   _sprite: {fileID: 21300000, guid: 451b88035a307c74390ab324e1a90de0, type: 3}
-  _fixedStart: 0
+  _fixedStart: -7
   _movementStart: 7
   _finish: -7

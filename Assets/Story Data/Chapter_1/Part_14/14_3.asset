@@ -21,6 +21,7 @@ MonoBehaviour:
   _character: 2
   _showCharacterOnStart: 0
   _hideCharacterOnFinish: 0
-  _fadeIn: 0
+  _moveBackgroundOnStart: 0
+  _fadeIn: 1
   _fadeOut: 0
   _lastUnitInPart: 0

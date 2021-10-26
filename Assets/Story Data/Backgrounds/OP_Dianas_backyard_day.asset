@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: OP_Dianas_backyard_day
   m_EditorClassIdentifier: 
   _sprite: {fileID: 21300000, guid: ee56bde4ab997aa4dad81ea5c10e52fa, type: 3}
-  _start: 0
-  _finish: 0
+  _fixedStart: -7
+  _movementStart: 7
+  _finish: -7

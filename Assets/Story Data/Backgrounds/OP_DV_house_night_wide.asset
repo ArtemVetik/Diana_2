@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: OP_DV_house_night_wide
   m_EditorClassIdentifier: 
   _sprite: {fileID: 21300000, guid: 3a34c8480a2a7c8458079bf815302a4f, type: 3}
-  _start: 0
-  _finish: 0
+  _fixedStart: 0
+  _movementStart: 7
+  _finish: -7

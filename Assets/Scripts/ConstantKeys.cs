@@ -2,7 +2,7 @@ public static class ConstantKeys
 {
     public static class GlobalKeys
     {
-        public const float Delay = 0.35f;
+        public const float Delay = 0.25f;
         public const float AnimationMixDuration = 1;
         public const float BackgroundMoveDuration = 4f;
     }
@@ -29,8 +29,7 @@ public static class ConstantKeys
 
     public enum Emotions
     {
-        none,
-        confusion,
+        confusion = 1,
         surprise_positive,
         surprise_negative,
         fear,
@@ -68,7 +67,8 @@ public static class ConstantKeys
         ultimatum,
         mobile_talk_smiling,
         wide_smile_mobile_talk,
-        despair
+        despair,
+        mobile_talk_suspicion
     }
 
     public enum Backgrounds
@@ -105,6 +105,7 @@ public static class ConstantKeys
         OP_Dianas_house_day,
         OP_Dianas_house_night,
         OP_Dianas_backyard_day,
-        OP_Dianas_backyard_night
+        OP_Dianas_backyard_night,
+        OP_porch_gift
     }
 }

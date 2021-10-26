@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: OP_door_closed_day_wide
   m_EditorClassIdentifier: 
   _sprite: {fileID: 21300000, guid: c1ad1b39c1a8c7740857b3fa87619937, type: 3}
-  _start: 7
+  _fixedStart: -7
+  _movementStart: 7
   _finish: -7

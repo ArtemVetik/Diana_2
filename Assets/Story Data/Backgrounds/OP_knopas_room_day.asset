@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: OP_knopas_room_day
   m_EditorClassIdentifier: 
   _sprite: {fileID: 21300000, guid: fcf248cb6f21d3c49847d53fc9228a2d, type: 3}
-  _start: 0
-  _finish: 0
+  _fixedStart: -7
+  _movementStart: 7
+  _finish: -7

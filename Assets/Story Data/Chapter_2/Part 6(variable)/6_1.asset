@@ -17,14 +17,14 @@ MonoBehaviour:
   - "\u041F\u043E\u043D\u044E\u0445\u0430\u0442\u044C \u0440\u043E\u0437\u0443."
   _type: 3
   _emotions: 0d0000000d000000
-  _background: 15
+  _background: 35
   _character: 0
   _showCharacterOnStart: 0
   _hideCharacterOnFinish: 0
-  _moveBackgroundOnStart: 0
   _fadeIn: 0
   _fadeOut: 1
   _lastUnitInPart: 1
+  _bgMoveData: {fileID: 0}
   _nextParts:
   - {fileID: 11400000, guid: 213d2203a179adb4c93d475bbfe3f50a, type: 2}
   - {fileID: 11400000, guid: 31f93cc011e3c3a4ab34bc478f3f091e, type: 2}

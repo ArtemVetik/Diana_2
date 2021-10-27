@@ -28,6 +28,7 @@ public class CharacterViewer : MonoBehaviour
                 if (character.name == name.ToString())
                 {
                     _currentCharacter = character;
+                    Debug.LogError("Init new character " + _currentCharacter);
                     CharacterChanged?.Invoke(_currentCharacter);
                     return;
                 }

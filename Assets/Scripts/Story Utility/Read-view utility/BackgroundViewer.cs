@@ -4,37 +4,35 @@ using DG.Tweening;
 [RequireComponent(typeof(SpriteRenderer))]
 public class BackgroundViewer : MonoBehaviour
 {
-    [SerializeField] private BackgroundData[] _backgroundsData;
-    [SerializeField] private SpriteRenderer _backgroundSprite;
+    [SerializeField] private Sprite[] _backgrounds;
 
-    private BackgroundData _currentData;
+    private SpriteRenderer _backgroundSprite;
+
+    private void Awake()
+    {
+        _backgroundSprite = GetComponent<SpriteRenderer>();
+    }
 
     public void SetBackground(ConstantKeys.Backgrounds name)
     {
+        _backgroundSprite.transform.position = new Vector2(0, transform.position.y);
+
         if (name.ToString() != _backgroundSprite.sprite.name && name.ToString() != string.Empty)
         {
-            foreach (var data in _backgroundsData)
+            foreach (var sprite in _backgrounds)
             {
-                if (data.Sprite != null && data.Sprite.name == name.ToString())
+                if (sprite != null && sprite.name == name.ToString())
                 {
-                    _currentData = data;
-                    _backgroundSprite.sprite = data.Sprite;
+                    _backgroundSprite.sprite = sprite;
                     return;
                 }
             }
         }
     }
 
-    public void SetBackgroundStartPosition(bool isMoving)
+    public void MoveBackground(BackgroundMovementData data)
     {
-        _backgroundSprite.transform.position = isMoving ? new Vector2(_currentData.MovementStart, _backgroundSprite.transform.position.y) : new Vector2(_currentData.FixedStart, _backgroundSprite.transform.position.y);
-    }
-
-    public void MoveBackground()
-    {
-        if(_backgroundSprite != null)
-        {
-            _backgroundSprite.transform.DOMoveX(_currentData.Finish, ConstantKeys.GlobalKeys.BackgroundMoveDuration);
-        }
+        _backgroundSprite.transform.position = new Vector2(data.Start, transform.position.y);
+        _backgroundSprite.transform.DOMoveX(data.Finish, ConstantKeys.GlobalKeys.BackgroundMoveDuration);
     }
 }

@@ -20,7 +20,7 @@ MonoBehaviour:
   _character: 1
   _showCharacterOnStart: 1
   _hideCharacterOnFinish: 1
-  _moveBackgroundOnStart: 1
   _fadeIn: 1
   _fadeOut: 1
   _lastUnitInPart: 0
+  _bgMoveData: {fileID: 11400000, guid: 94ed8bbc33769234bb25fe93f5a1869b, type: 2}

@@ -5,8 +5,6 @@ using UnityEngine;
 public class EmotionViewer : MonoBehaviour
 {
     [SerializeField] private CharacterViewer _characterViewer;
-    [SerializeField] private ConstantKeys.Emotions _emotionToView;
-
     private SkeletonAnimation _currentSkeleton;
 
     private void OnEnable()
@@ -22,25 +20,21 @@ public class EmotionViewer : MonoBehaviour
     private void OnCharacterChanged(Character character)
     {
         _currentSkeleton = character.Skeleton;
+        Debug.LogError("Init new character " + _currentSkeleton);
     }
 
     public void ShowEmotion(ConstantKeys.Emotions emotion)
     {
-        if (_emotionToView != emotion)
+        if (IsAnimationAvailable(emotion.ToString()))
         {
-            if (IsAnimationAvailable(emotion.ToString()))
-            {
-                _emotionToView = emotion;
-                var newTrack = _currentSkeleton.state.SetAnimation(0, emotion.ToString(), true);
-                newTrack.MixDuration = ConstantKeys.GlobalKeys.AnimationMixDuration;
-            }
-            else
-            {
-                Debug.LogError($"Emotion {emotion} doesn't found in {_currentSkeleton.name}");
-            }
-            
+            var newTrack = _currentSkeleton.state.SetAnimation(0, emotion.ToString(), true);
+            newTrack.MixDuration = ConstantKeys.GlobalKeys.AnimationMixDuration;
+            Debug.LogError("Set emotion " + emotion);
         }
-        else return;
+        else
+        {
+            Debug.LogError($"Emotion {emotion} doesn't found in {_currentSkeleton.name}");
+        }
     }
 
     public void ResetEmotion()
@@ -55,7 +49,7 @@ public class EmotionViewer : MonoBehaviour
 
         foreach (var animation in animations)
         {
-            if(animation.Name == name)
+            if (animation.Name == name)
             {
                 return true;
             }

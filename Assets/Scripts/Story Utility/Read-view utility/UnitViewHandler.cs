@@ -51,7 +51,7 @@ public class UnitViewHandler : MonoBehaviour
     {
         if (index == 0)
         {
-            StartCoroutine(ShowStartActions(phrase));
+            StartCoroutine(ShowStartActions(phrase, index));
         }
         else
         {
@@ -62,38 +62,38 @@ public class UnitViewHandler : MonoBehaviour
 
             UnitViewed?.Invoke();
         }
-        
-        if(_currentUnit.HasEmotions)
-        {
-            _emotionViewer.ShowEmotion(_currentUnit.GetEmotion(index));
-        }
     }
 
-    private IEnumerator ShowStartActions(string phrase)
+    private IEnumerator ShowStartActions(string phrase, int emotionIndex)
     {
         _backgroundViewer.SetBackground(_currentUnit.Background);
-        _backgroundViewer.SetBackgroundStartPosition(_currentUnit.MoveBackgroundOnStart);
 
         if (_currentUnit.FadeOut)
         {
             _fader.FadeOut();
-            Debug.LogError("Fader delay");
-            yield return _delay;
-        }
 
-        if (_currentUnit.MoveBackgroundOnStart)
-        {
-            _backgroundViewer.MoveBackground();
-            Debug.LogError("bg delay");
-            yield return _backgroundDelay;
-        }
+            if (_currentUnit.BackgroundMoveData != null)
+            {
+                _backgroundViewer.MoveBackground(_currentUnit.BackgroundMoveData);
+                yield return _backgroundDelay;
+            }
+            else
+            {
 
+                yield return _delay;
+            }
+        }
+        
         if (_currentUnit.ShowCharacterOnStart)
         {
             _characterViewer.InitCharacter(_currentUnit.Character);
             _characterViewer.MoveCharacter(true);
-            Debug.LogError("char move delay");
             yield return _delay;
+        }
+
+        if (_currentUnit.HasEmotions)
+        {
+            _emotionViewer.ShowEmotion(_currentUnit.GetEmotion(emotionIndex));
         }
 
         _phraseViewer.ViewStandartUnit(_currentUnit.Type, phrase);
@@ -110,8 +110,6 @@ public class UnitViewHandler : MonoBehaviour
             _characterViewer.MoveCharacter(false);
             yield return _delay;
         }
-
-        //тут движение фона на финише
 
         if (_currentUnit.FadeIn)
         {
@@ -136,6 +134,8 @@ public class UnitViewHandler : MonoBehaviour
     public void OnVariantPrepared(string phrase, int index, StoryUnit unit)
     {
         _currentUnit = unit;
+
+        _backgroundViewer.SetBackground(_currentUnit.Background);
 
         if (_currentUnit.FadeOut)
         {

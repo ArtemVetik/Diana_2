@@ -24,7 +24,7 @@ public static class ConstantKeys
         Mateo,
         Knopa,
         Nurse,
-        None
+        Granny
     }
 
     public enum Emotions
@@ -68,7 +68,12 @@ public static class ConstantKeys
         mobile_talk_smiling,
         wide_smile_mobile_talk,
         despair,
-        mobile_talk_suspicion
+        mobile_talk_suspicion,
+        anxiety,
+        kind_look,
+        nervous,
+        ñold_view,
+        ñuriosity
     }
 
     public enum Backgrounds
@@ -100,12 +105,16 @@ public static class ConstantKeys
         OP_DV_secret_door_day_wide,
         OP_DV_house_night_wide,
         OP_DV_house_day_wide,
-        OP_Mateos_house_day,
-        OP_Mateos_house_night,
+        OP_Mateo_house_day,
+        OP_Mateo_house_night,
         OP_Dianas_house_day,
         OP_Dianas_house_night,
         OP_Dianas_backyard_day,
         OP_Dianas_backyard_night,
-        OP_porch_gift
+        OP_porch_gift,
+        OP_box_table,
+        OP_box_opened,
+        OP_Mateos_kitchen_day,
+        OP_Mateos_kitchen_night
     }
 }

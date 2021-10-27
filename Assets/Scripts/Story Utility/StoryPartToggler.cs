@@ -126,10 +126,21 @@ public class StoryPartToggler : MonoBehaviour
             var variant = nextPart.GetVariantUnit();
             _variablePartVariants.Clear();
 
-            for (int i = 0; i < variant.NextPartsLength; i++)
+            if(variant.NextPartsLength > 1)
             {
-                _variablePartVariants.Add(variant.GetNextPart(i));
+                for (int i = 0; i < variant.NextPartsLength; i++)
+                {
+                    _variablePartVariants.Add(variant.GetNextPart(i));
+                }
             }
+            else
+            {
+                for (int i = 0; i < variant.Lenght; i++)
+                {
+                    _variablePartVariants.Add(variant.GetNextPart(0));
+                }
+            }
+            
         }
 
         _teller.InitializeStory(nextPart);

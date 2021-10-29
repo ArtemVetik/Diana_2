@@ -9,12 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Main_menu.unity
     guid: d916ce87e6d2a8d47adb50298cd9b74b
   - enabled: 1
-    path: Assets/Scenes/Castomization/Castomization.unity
-    guid: 267ea317c71ed5d408475455712ed25f
-  - enabled: 1
     path: Assets/Scenes/Chapter_1.unity
     guid: 83591897382a24742b46ad721e3d0aa8
   - enabled: 1
     path: Assets/Scenes/Chapter_2.unity
     guid: a5382067e71d0684f8558f19c300464d
+  - enabled: 1
+    path: Assets/Scenes/Castomization/Castomization.unity
+    guid: 267ea317c71ed5d408475455712ed25f
   m_configObjects: {}

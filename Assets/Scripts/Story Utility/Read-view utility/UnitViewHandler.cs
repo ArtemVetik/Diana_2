@@ -57,7 +57,13 @@ public class UnitViewHandler : MonoBehaviour
         {
             Debug.LogError("pre-message delay");
             yield return _delay;
-            
+
+            if (_currentUnit.HasEmotions)
+            {
+                _emotionViewer.ShowEmotion(_currentUnit.GetEmotion(index));
+            }
+
+
             _phraseViewer.ViewStandartUnit(_currentUnit.Type, phrase);
 
             UnitViewed?.Invoke();

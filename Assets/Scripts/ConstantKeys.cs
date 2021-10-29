@@ -3,6 +3,7 @@ public static class ConstantKeys
     public static class GlobalKeys
     {
         public const float Delay = 0.25f;
+        public const float SceneLoadFadingDuration = 1;
         public const float AnimationMixDuration = 1;
         public const float BackgroundMoveDuration = 4f;
     }

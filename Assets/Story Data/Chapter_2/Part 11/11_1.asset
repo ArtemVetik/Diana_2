@@ -19,9 +19,9 @@ MonoBehaviour:
   _emotions: 15000000
   _background: 15
   _character: 0
-  _showCharacterOnStart: 0
+  _showCharacterOnStart: 1
   _hideCharacterOnFinish: 1
-  _moveBackgroundOnStart: 0
   _fadeIn: 1
   _fadeOut: 0
   _lastUnitInPart: 0
+  _bgMoveData: {fileID: 0}

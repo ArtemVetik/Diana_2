@@ -14,7 +14,6 @@ public class StoryPartToggler : MonoBehaviour
     [SerializeField] private Fader _fader;
     [SerializeField] private bool _defaultStoryNumeration = true;
     [SerializeField] private Dropdown _dropDown;
-    [SerializeField] private GameObject _loadCanvas;
     private enum Part
     {
         Part_1,
@@ -95,8 +94,6 @@ public class StoryPartToggler : MonoBehaviour
         }
 
         _teller.InitializeStory(nextPart);
-
-        _loadCanvas.SetActive(false);
     }
 
     private void OnNewPartNeeded()
@@ -177,7 +174,6 @@ public class StoryPartToggler : MonoBehaviour
     {
         if(index == _storyParts.Count)
         {
-            _loadCanvas.SetActive(true);
             return true;
         }
 

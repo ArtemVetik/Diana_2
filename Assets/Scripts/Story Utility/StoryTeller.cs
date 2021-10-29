@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
 [RequireComponent(typeof(UnitReader))]
 [RequireComponent(typeof(UnitViewHandler))]
@@ -15,6 +16,7 @@ public class StoryTeller : MonoBehaviour
     private StoryUnit _actualUnit;
     private bool _variantsShowed = false;
     private bool _clickAvailable = true;
+    private EventSystem _currentEventSystem;
 
     public event UnityAction NewPartNeeded;
     public event UnityAction<int> NewVariantPartNeeded;
@@ -25,6 +27,7 @@ public class StoryTeller : MonoBehaviour
         _viewer.StandartUnitCompleted += OnStandartUnitCompleted;
         _viewer.VariantUnitCompleted += OnVariantUnitCompleted;
         _viewer.UnitViewed += OnUnitViewed;
+        _currentEventSystem = EventSystem.current;
     }
 
     private void OnDisable()
@@ -42,7 +45,7 @@ public class StoryTeller : MonoBehaviour
 
     private void Update()
     {        
-        if (Input.GetMouseButtonDown(0) && !_variantsShowed && _clickAvailable)
+        if (Input.GetMouseButtonDown(0) && !_variantsShowed && _clickAvailable && !_currentEventSystem.IsPointerOverGameObject())
         {
             _clickAvailable = false;
             ReadUnit();

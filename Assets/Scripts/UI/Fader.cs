@@ -13,6 +13,11 @@ public class Fader : MonoBehaviour
         _fader = GetComponent<Image>();
     }
 
+    private void Start()
+    {
+        FadeOut();
+    }
+
     public void FadeIn(Action OnFaded = null)
     {
         _fader.DOColor(new Color(_fader.color.r, _fader.color.g, _fader.color.b, 1), ConstantKeys.GlobalKeys.Delay).OnComplete(() => { if (OnFaded != null) OnFaded(); });

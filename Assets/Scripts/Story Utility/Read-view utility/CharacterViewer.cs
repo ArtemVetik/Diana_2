@@ -47,4 +47,9 @@ public class CharacterViewer : MonoBehaviour
             _currentCharacter.Dissapear();
         }
     }
+
+    public void Reset()
+    {
+        _currentCharacter.transform.position = _currentCharacter.Finish.position;
+    }
 }

@@ -13,57 +13,57 @@ MonoBehaviour:
   m_Name: Diana
   m_EditorClassIdentifier: 
   _skins:
-  - _guid: 15e435bc-c23d-4401-b8f1-880a711e7428
+  - _guid: e4ce19e7-4edb-4c64-984f-e24ed4da44ab
     _name: default
     _preview: {fileID: 0}
-  - _guid: 81e81ac2-222c-4dd8-8107-efff7056d42b
+  - _guid: 99c113a2-7820-4e6f-8987-327406c0c6d3
     _name: Diana_skin
     _preview: {fileID: 0}
-  - _guid: f6a7aef9-33ef-45a0-91d9-821d68f13401
+  - _guid: 370c53e9-6e09-47f7-aceb-4423b299daa9
     _name: Hairs/Hair_1
     _preview: {fileID: 0}
-  - _guid: 6f256c90-6b99-4083-b7e5-e388cfb134ce
+  - _guid: ee337244-344a-4231-b78c-92fc5ef97eaa
     _name: Hairs/Hair_2
     _preview: {fileID: 0}
-  - _guid: 907cbe25-d361-499c-9e30-7fdbf12c89f5
+  - _guid: e73118cd-196f-45a2-a048-ec06657b6b58
     _name: Hairs/Hair_3
     _preview: {fileID: 0}
-  - _guid: cc4921bb-316c-4e3a-a576-be0bb36db5d5
+  - _guid: af1a1648-c07d-4b95-981e-344c2d2bcf91
     _name: Hairs/Hair_4
     _preview: {fileID: 0}
-  - _guid: 35578695-c12b-4f13-82fb-b5733aa2a869
+  - _guid: 620441c1-ce62-4401-b6af-86b49683da48
     _name: Hairs/Hair_5
     _preview: {fileID: 0}
-  - _guid: 41f98ee7-f12d-4e48-9329-3866fef937a9
+  - _guid: 7ec585a3-9e56-4918-9014-5b3d6023b5ec
     _name: Hairs/Hair_6
     _preview: {fileID: 0}
-  - _guid: 2f215ddb-1c96-4ebc-81b4-82209969d09f
+  - _guid: 4b5cebfa-191d-407d-82f3-78200e76bdb9
     _name: Hairs/Hair_7
     _preview: {fileID: 0}
-  - _guid: c8e53b37-8415-4c7d-82b0-d3a426011f26
+  - _guid: 4ee990a6-41fa-43df-a10e-3e325cbb78cd
     _name: Hairs/Hair_8
     _preview: {fileID: 0}
-  - _guid: f94815ea-550e-4f83-bc09-04102cf5cec5
+  - _guid: 47ca6b98-ba0c-41ba-8912-43c52b12e37f
     _name: Makeups/Makeup_2
     _preview: {fileID: 0}
-  - _guid: 13e587a7-0db6-4a1f-a3f4-831e9399ac39
+  - _guid: fe4f8a93-fcd5-4b06-8ead-8ed09218942a
     _name: Makeups/Makeup_3
     _preview: {fileID: 0}
-  - _guid: 85477c4b-ef2b-4342-8556-68ffae28de01
+  - _guid: cb0b968b-dba8-4fa8-bd6a-abc89667a394
     _name: Makeups/Makeup_4
     _preview: {fileID: 0}
-  - _guid: adaf1d4f-0152-4ed9-bbcf-14642eac0459
+  - _guid: 84bc5abd-f815-4a47-843e-fb4c9bf433c0
     _name: Outfits/Outfit_1
     _preview: {fileID: 0}
-  - _guid: 3221e217-b9f5-4b20-9d65-010472687d12
+  - _guid: b9b2c69c-ccfb-4642-9155-bb3494f08fd8
     _name: Outfits/Outfit_2
     _preview: {fileID: 0}
-  - _guid: 0a7c50f7-7a4a-489b-a2c7-8157aa68a1b0
+  - _guid: a667b84c-dccf-42ac-8521-98a0eb9e46e7
     _name: Outfits/Outfit_3
     _preview: {fileID: 0}
-  - _guid: da79bf88-2707-499f-a2cb-3241e16b3bbb
+  - _guid: 7f474940-8568-4810-b578-536a4b6b487a
     _name: Outfits/Outfit_4
     _preview: {fileID: 0}
-  - _guid: db46f174-c846-439c-8030-fc8e6dcb1c5b
+  - _guid: e2cb5d77-06f3-4ef1-a3b9-4350a38c19f5
     _name: Outfits/Outfit_5
     _preview: {fileID: 0}

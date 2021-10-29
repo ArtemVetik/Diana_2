@@ -7,7 +7,7 @@ using Diana2.Castomization;
 public class SkinDataBaseInitializer : EditorWindow
 {
     private SkinDataBase _dataBase;
-    private SkeletonAnimation _skeletonAnimation;
+    private SkeletonDataAsset _skeletonAsset;
 
     [MenuItem("Castomization/SkinDataBaseInitializer")]
     public static void OpenWindow()
@@ -23,7 +23,7 @@ public class SkinDataBaseInitializer : EditorWindow
         EditorGUILayout.HelpBox("Updates the selected skin database for the selected model", MessageType.Info);
 
         _dataBase = EditorGUILayout.ObjectField("SkinDataBase", _dataBase, typeof(SkinDataBase)) as SkinDataBase;
-        _skeletonAnimation = EditorGUILayout.ObjectField("SkeletonAnimation", _skeletonAnimation, typeof(SkeletonAnimation)) as SkeletonAnimation;
+        _skeletonAsset = EditorGUILayout.ObjectField("SkeletonDataAsset", _skeletonAsset, typeof(SkeletonDataAsset)) as SkeletonDataAsset;
 
         GUILayout.FlexibleSpace();
 
@@ -38,19 +38,22 @@ public class SkinDataBaseInitializer : EditorWindow
             Debug.LogError("DataBase is null");
             return;
         }
-        if (_skeletonAnimation == null)
+        if (_skeletonAsset == null)
         {
             Debug.LogError("SkeletonAnimation is null");
             return;
         }
 
+        var skeletonData = _skeletonAsset.GetSkeletonData(true);
+
         _dataBase.Clear();
-        foreach (var skin in _skeletonAnimation.skeleton.Data.Skins)
-        {
+        foreach (var skin in skeletonData.Skins)
             _dataBase.Add(new SkinData(skin.Name, null));
-        }
 
         EditorUtility.SetDirty(_dataBase);
+
+        Debug.Log("Database update: successful");
+        Debug.Log($"Added {skeletonData.Skins.Count} skins");
     }
 }
 #endif

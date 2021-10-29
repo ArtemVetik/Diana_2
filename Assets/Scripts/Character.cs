@@ -22,11 +22,11 @@ public class Character : MonoBehaviour
 
     public void Appear()
     {
-        transform.DOMoveX(_start.position.x, ConstantKeys.GlobalKeys.Delay);
+        transform.DOMoveX(_start.position.x, ConstantKeys.GlobalKeys.CharacterMovingDuration);
     }
 
     public void Dissapear()
     {
-        transform.DOMoveX(_finish.position.x, ConstantKeys.GlobalKeys.Delay);
+        transform.DOMoveX(_finish.position.x, ConstantKeys.GlobalKeys.CharacterMovingDuration);
     }
 }

@@ -3,46 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Tymski;
 
 [RequireComponent(typeof(Button))]
 public class SceneLoader : MonoBehaviour
 {
-    //[SerializeField] private Object _targetScene;
-    [SerializeField] private int _targetSceneIndex;
-    [SerializeField] private Fader _fader;
+    [SerializeField] private SceneReference _targetScene;
 
     private Button _button;
 
     private void Awake()
     {
         _button = GetComponent<Button>();
-        
     }
 
     private void OnEnable()
     {
-        _button.onClick.AddListener(() => LoadScene(_targetSceneIndex));
+        _button.onClick.AddListener(LoadScene);
     }
 
     private void OnDisable()
     {
-        _button.onClick.RemoveListener(() => LoadScene(_targetSceneIndex));
+        _button.onClick.RemoveListener(LoadScene);
     }
 
-    private void LoadScene(int index)
-    {
-        _fader.FadeIn(() => SceneManager.LoadScene(_targetSceneIndex));
-    }
-
-    /*
     private void LoadScene()
     {
-        _fader.FadeIn(() => SceneManager.LoadScene(_targetScene.name));
-
-        if (_targetScene != null)
-        {
-            
-        }
-        
-    }*/
+        Singleton<Fader>.Instance.FadeIn(() => SceneManager.LoadScene(_targetScene.ScenePath));
+    }
 }

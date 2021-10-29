@@ -11,7 +11,6 @@ public class StoryPartToggler : MonoBehaviour
 
 
     [SerializeField] private Part _partToLoad;
-    [SerializeField] private Fader _fader;
     [SerializeField] private bool _defaultStoryNumeration = true;
     [SerializeField] private Dropdown _dropDown;
     private enum Part
@@ -49,7 +48,6 @@ public class StoryPartToggler : MonoBehaviour
 
     private List<StoryPart> _variablePartVariants = new List<StoryPart>();
     private int _index = -1;
-    
 
     private void OnEnable()
     {
@@ -62,6 +60,11 @@ public class StoryPartToggler : MonoBehaviour
     {
         _teller.NewPartNeeded -= OnNewPartNeeded;
         _teller.NewVariantPartNeeded -= OnNewVariantPartNeeded;
+    }
+
+    private void Start()
+    {
+        Singleton<Fader>.Instance.FadeOut();
     }
 
     private void CreateDropDownMenu()
@@ -105,7 +108,7 @@ public class StoryPartToggler : MonoBehaviour
             _index = (int)_partToLoad;
             nextPart = _storyParts[_index];
             _defaultStoryNumeration = true;
-            _fader.FadeOut();
+            Singleton<Fader>.Instance.FadeOut();
         }
         else
         {

@@ -20,12 +20,12 @@ MonoBehaviour:
   - "\u041B\u0438\u0446\u043E \u043E\u0431\u0435\u0437\u043E\u0431\u0440\u0430\u0437\u0438\u043B
     \u0445\u0438\u0449\u043D\u044B\u0439 \u043E\u0441\u043A\u0430\u043B."
   _type: 2
-  _emotions: 0d0000000d0000000d000000
+  _emotions: 0b0000000b0000000b000000
   _background: 21
   _character: 2
   _showCharacterOnStart: 1
   _hideCharacterOnFinish: 0
-  _moveBackgroundOnStart: 0
   _fadeIn: 0
   _fadeOut: 1
   _lastUnitInPart: 0
+  _bgMoveData: {fileID: 0}

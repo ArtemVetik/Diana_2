@@ -17,12 +17,12 @@ MonoBehaviour:
     \u0432\u043E\u0437\u043B\u0435 \u043E\u043A\u043D\u0430 \u0438 \u0441\u043E \u0437\u043B\u043E\u0441\u0442\u044C\u044E
     \u0441\u0436\u0438\u043C\u0430\u043B\u0430 \u043A\u0443\u043B\u0430\u043A\u0438."
   _type: 2
-  _emotions: 0d000000
+  _emotions: 23000000
   _background: 21
   _character: 2
   _showCharacterOnStart: 1
   _hideCharacterOnFinish: 0
-  _moveBackgroundOnStart: 0
   _fadeIn: 0
   _fadeOut: 1
   _lastUnitInPart: 0
+  _bgMoveData: {fileID: 0}

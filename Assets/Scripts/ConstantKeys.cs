@@ -2,7 +2,9 @@ public static class ConstantKeys
 {
     public static class GlobalKeys
     {
-        public const float Delay = 0.25f;
+        public const float CharacterMovingDuration = 0.25f;
+        public const float PreMessageDelay = 0.3f;
+        public const float FadingDuration = 0.35f;
         public const float SceneLoadFadingDuration = 1;
         public const float AnimationMixDuration = 1;
         public const float BackgroundMoveDuration = 4f;

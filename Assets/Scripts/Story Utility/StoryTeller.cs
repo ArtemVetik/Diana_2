@@ -44,12 +44,21 @@ public class StoryTeller : MonoBehaviour
     }
 
     private void Update()
-    {        
+    {
+#if UNITY_EDITOR
+
+        if (Input.GetMouseButtonDown(0) && !_variantsShowed && _clickAvailable && !_currentEventSystem.IsPointerOverGameObject())
+        {
+            _clickAvailable = false;
+            ReadUnit();
+        }
+#else
         if (Input.GetMouseButtonDown(0) && !_variantsShowed && _clickAvailable && !_currentEventSystem.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
         {
             _clickAvailable = false;
             ReadUnit();
         }
+#endif
     }
 
     private void InitializeActualUnit()

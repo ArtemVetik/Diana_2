@@ -14,13 +14,14 @@ public class UnitViewHandler : MonoBehaviour
     [SerializeField] private BackgroundViewer _backgroundViewer;
     [SerializeField] private EmotionViewer _emotionViewer;
     [SerializeField] private UnitReader _reader;
-    [SerializeField] private Fader _fader;
 
     [SerializeField] private Transform _variantButtonSpawnParent;
     [SerializeField] private VariantButton _variantButtonTemplate;
 
-    private WaitForSeconds _delay = new WaitForSeconds(ConstantKeys.GlobalKeys.Delay);
-    private WaitForSeconds _backgroundDelay = new WaitForSeconds(ConstantKeys.GlobalKeys.BackgroundMoveDuration);
+    private WaitForSeconds _characterMoveDelay = new WaitForSeconds(ConstantKeys.GlobalKeys.CharacterMovingDuration);
+    private WaitForSeconds _backgroundMoveDelay = new WaitForSeconds(ConstantKeys.GlobalKeys.BackgroundMoveDuration);
+    private WaitForSeconds _fadingDelay = new WaitForSeconds(ConstantKeys.GlobalKeys.FadingDuration);
+    private WaitForSeconds _preMessageDelay = new WaitForSeconds(ConstantKeys.GlobalKeys.PreMessageDelay);
     private StoryUnit _currentUnit;
     private int _chosenVariant;
     private List<VariantButton> _buttonsPool = new List<VariantButton>();
@@ -56,7 +57,7 @@ public class UnitViewHandler : MonoBehaviour
         else
         {
             Debug.LogError("pre-message delay");
-            yield return _delay;
+            yield return _preMessageDelay;
 
             if (_currentUnit.HasEmotions)
             {
@@ -76,17 +77,16 @@ public class UnitViewHandler : MonoBehaviour
 
         if (_currentUnit.FadeOut)
         {
-            _fader.FadeOut();
+            Singleton<Fader>.Instance.FadeOut();
 
             if (_currentUnit.BackgroundMoveData != null)
             {
                 _backgroundViewer.MoveBackground(_currentUnit.BackgroundMoveData);
-                yield return _backgroundDelay;
+                yield return _backgroundMoveDelay;
             }
             else
             {
-
-                yield return _delay;
+                yield return _fadingDelay;
             }
         }
         
@@ -94,7 +94,7 @@ public class UnitViewHandler : MonoBehaviour
         {
             _characterViewer.InitCharacter(_currentUnit.Character);
             _characterViewer.MoveCharacter(true);
-            yield return _delay;
+            yield return _characterMoveDelay;
         }
 
         if (_currentUnit.HasEmotions)
@@ -114,18 +114,18 @@ public class UnitViewHandler : MonoBehaviour
         if (_currentUnit.HideCharacterOnFinish)
         {
             _characterViewer.MoveCharacter(false);
-            yield return _delay;
+            yield return _characterMoveDelay;
         }
 
         if (_currentUnit.FadeIn)
         {
-            _fader.FadeIn();
-            yield return _delay;
+            Singleton<Fader>.Instance.FadeIn();
+            yield return _fadingDelay;
         }
 
         _emotionViewer.ResetEmotion();
 
-        yield return _delay;
+        yield return null;
 
         if(!(_currentUnit is VariantUnit))
         {
@@ -145,7 +145,7 @@ public class UnitViewHandler : MonoBehaviour
 
         if (_currentUnit.FadeOut)
         {
-            _fader.FadeOut();
+            Singleton<Fader>.Instance.FadeOut();
             Debug.LogError("variant Fader delay");
         }
 

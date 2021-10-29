@@ -21,11 +21,11 @@ MonoBehaviour:
     \u0435\u0433\u043E \u0434\u043E\u0433\u0430\u0434\u043A\u0438. "
   _type: 2
   _emotions: 0d0000001b000000
-  _background: 28
+  _background: 39
   _character: 1
   _showCharacterOnStart: 1
   _hideCharacterOnFinish: 0
   _fadeIn: 0
-  _fadeOut: 1
+  _fadeOut: 0
   _lastUnitInPart: 0
   _bgMoveData: {fileID: 0}

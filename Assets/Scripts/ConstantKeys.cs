@@ -118,6 +118,15 @@ public static class ConstantKeys
         OP_box_table,
         OP_box_opened,
         OP_Mateos_kitchen_day,
-        OP_Mateos_kitchen_night
+        OP_Mateos_kitchen_night,
+        OP_cafe_exterior,
+        OP_cafe_inside,
+        OP_car,
+        OP_DV_house_day,
+        OP_DV_house_night,
+        OP_opened_album_2,
+        OP_opened_album_3,
+        OP_suburb_day,
+        OP_suburb_night,
     }
 }

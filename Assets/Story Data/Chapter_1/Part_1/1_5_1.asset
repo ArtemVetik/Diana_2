@@ -24,3 +24,4 @@ MonoBehaviour:
   _fadeIn: 1
   _fadeOut: 1
   _lastUnitInPart: 0
+  _bgMoveData: {fileID: 0}

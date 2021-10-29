@@ -25,10 +25,10 @@ MonoBehaviour:
     \u043E\u0433\u043D\u0435\u043D\u043D\u043E\u0435..."
   _type: 0
   _emotions: 040000000400000004000000
-  _background: 9
+  _background: 40
   _character: 0
   _showCharacterOnStart: 0
-  _hideCharacterOnFinish: 1
+  _hideCharacterOnFinish: 0
   _fadeIn: 1
   _fadeOut: 0
   _lastUnitInPart: 0

@@ -839,7 +839,6 @@ MonoBehaviour:
   _backgroundViewer: {fileID: 1934581495}
   _emotionViewer: {fileID: 544593815}
   _reader: {fileID: 544593810}
-  _fader: {fileID: 0}
   _variantButtonSpawnParent: {fileID: 449518925}
   _variantButtonTemplate: {fileID: 1306936377011552335, guid: 9a4408bddba54a74799e19e1e6e11a62, type: 3}
 --- !u!114 &544593810
@@ -3238,10 +3237,13 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2847f9b627bb0e5458ce09b6374faa3a, type: 3}
   - {fileID: 21300000, guid: e4a2ab4d1559c9946a23a402fa4700a5, type: 3}
   - {fileID: 21300000, guid: fcf248cb6f21d3c49847d53fc9228a2d, type: 3}
-  - {fileID: 21300000, guid: b3ce23e0c278aad45898240b42f0446b, type: 3}
+  - {fileID: 21300000, guid: c1681962b5c7ed94a97048d54e4bb8a1, type: 3}
   - {fileID: 21300000, guid: 61178a4f85d909d41a15e6e5e2e6ae3c, type: 3}
   - {fileID: 21300000, guid: f9fa4dff85d4e62469165ecbb9b88ac9, type: 3}
   - {fileID: 21300000, guid: 96656a0eb47a1474399cf80141618a92, type: 3}
+  - {fileID: 21300000, guid: dd14f0ab3e89b154bbb5715ca60a0b5d, type: 3}
+  - {fileID: 21300000, guid: c5d45c75d39d05948b3e52fef60c9ad9, type: 3}
+  - {fileID: 21300000, guid: 233a278ed9d40d540a1416f6473a4a21, type: 3}
 --- !u!1 &1940293427
 GameObject:
   m_ObjectHideFlags: 0
@@ -3456,7 +3458,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7613040301799651117, guid: cb5c921fd28c1604e972dcf7155bac13, type: 3}
       propertyPath: m_Name
-      value: DianaModel
+      value: Diana
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb5c921fd28c1604e972dcf7155bac13, type: 3}

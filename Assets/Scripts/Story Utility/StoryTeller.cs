@@ -45,7 +45,7 @@ public class StoryTeller : MonoBehaviour
 
     private void Update()
     {        
-        if (Input.GetMouseButtonDown(0) && !_variantsShowed && _clickAvailable && !_currentEventSystem.IsPointerOverGameObject())
+        if (Input.GetMouseButtonDown(0) && !_variantsShowed && _clickAvailable && !_currentEventSystem.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
         {
             _clickAvailable = false;
             ReadUnit();

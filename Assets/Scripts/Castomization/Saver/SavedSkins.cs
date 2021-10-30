@@ -5,26 +5,21 @@ using UnityEngine;
 
 namespace Diana2.Castomization
 {
-    public enum SaveModel
-    {
-        Diana,
-    }
-
     [Serializable]
     public class SavedSkins
     {
         [SerializeField] private List<string> _savedGuid = new List<string>();
 
         private SkinDataBase _dataBase;
-        private SaveModel _targetModel;
 
-        public SavedSkins(SaveModel saveModel, SkinDataBase dataBase)
+        public SavedSkins(SkinDataBase dataBase)
         {
             _dataBase = dataBase;
-            _targetModel = saveModel;
 
-            dataBase.TryGetSkinByName(SaveModelConverter.GetInitialSkin(saveModel), out SkinData initialSkin);
-            AddSkin(initialSkin);
+            foreach (var skin in _dataBase.Data)
+                if (skin.IsPremanent)
+                    if (_dataBase.TryGetSkinByName(skin.Name, out SkinData skinData))
+                        AddSkin(skinData);
         }
 
         public IEnumerable<SkinData> Data => from data in _dataBase.Data
@@ -47,40 +42,18 @@ namespace Diana2.Castomization
         public void Save()
         {
             var jsonString = JsonUtility.ToJson(this);
-            var saveKey = SaveModelConverter.GetSaveKey(_targetModel);
-            PlayerPrefs.SetString(saveKey, jsonString);
+            PlayerPrefs.SetString(_dataBase.SaveKey, jsonString);
         }
 
         public void Load()
         {
-            var saveKey = SaveModelConverter.GetSaveKey(_targetModel);
-
-            if (PlayerPrefs.HasKey(saveKey) == false)
+            if (PlayerPrefs.HasKey(_dataBase.SaveKey) == false)
                 return;
 
-            var jsonString = PlayerPrefs.GetString(saveKey);
+            var jsonString = PlayerPrefs.GetString(_dataBase.SaveKey);
             var saved = JsonUtility.FromJson<SavedSkins>(jsonString);
 
             _savedGuid = saved._savedGuid;
-        }
-    }
-
-    internal static class SaveModelConverter
-    {
-        public static string GetSaveKey(SaveModel saveModel)
-        {
-            if (saveModel == SaveModel.Diana)
-                return "DianaSkinSaveKey";
-
-            throw new ArgumentOutOfRangeException("Can't find save model");
-        }
-
-        public static string GetInitialSkin(SaveModel saveModel)
-        {
-            if (saveModel == SaveModel.Diana)
-                return "Diana_skin";
-
-            throw new ArgumentOutOfRangeException("Can't find save model");
         }
     }
 }

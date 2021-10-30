@@ -7,9 +7,11 @@ namespace Diana2.Castomization {
     [CreateAssetMenu(fileName = "SkinDataBase", menuName = "Castomization/SkinDataBase", order = 51)]
     public class SkinDataBase : ScriptableObject
     {
+        [SerializeField] private string _saveKey;
         [SerializeField] private List<SkinData> _skins = new List<SkinData>();
 
         public IEnumerable<SkinData> Data => _skins;
+        public string SaveKey => _saveKey;
 
         public void Add(SkinData data)
         {

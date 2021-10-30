@@ -7,9 +7,8 @@ using UnityEngine;
 namespace Diana2.Castomization
 {
     [RequireComponent(typeof(SkeletonAnimation))]
-    public class SkinInitializer : MonoBehaviour
+    public abstract class SkinInitializer : MonoBehaviour
     {
-        [SerializeField] private SaveModel _targetModel;
         [SerializeField] private SkinDataBase _dataBase;
 
         private SkeletonAnimation _skeletonAnimation;
@@ -21,14 +20,19 @@ namespace Diana2.Castomization
 
         private void Start()
         {
-            var savedSkin = new SavedSkins(_targetModel, _dataBase);
-            savedSkin.Load();
+            var savedSkins = new SavedSkins(_dataBase);
+            savedSkins.Load();
 
+            Initialize(savedSkins);
+        }
+
+        public void Initialize(SavedSkins savedSkins)
+        {
             Skin skin = new Skin("SpineSkin");
             Skeleton skeleton = _skeletonAnimation.skeleton;
             SkeletonData skeletonData = skeleton.Data;
 
-            foreach (var skinData in savedSkin.Data)
+            foreach (var skinData in savedSkins.Data)
             {
                 var newSkin = skeletonData.FindSkin(skinData.Name);
                 skin.AddSkin(newSkin);

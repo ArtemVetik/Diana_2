@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b049c00b62a73c048b6112e1a34c35e1, type: 3}
   m_Name: Diana
   m_EditorClassIdentifier: 
-  _saveKey: 
+  _saveKey: DianaSkinSaveKey
   _skins:
   - _guid: b9c5e120-e634-4b60-9dbe-52a62b362a85
     _name: default

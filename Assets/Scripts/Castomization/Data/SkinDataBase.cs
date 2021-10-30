@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -21,6 +22,11 @@ namespace Diana2.Castomization {
         public void Remove(SkinData data)
         {
             _skins.Remove(data);
+        }
+
+        public int IndexOf(SkinData renderData)
+        {
+            return _skins.IndexOf(renderData);
         }
 
         public bool TryGetSkinByName(string skinName, out SkinData skinData)

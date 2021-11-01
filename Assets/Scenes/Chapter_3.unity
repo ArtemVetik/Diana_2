@@ -667,9 +667,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 13b7851cd47321148b2661089452ccbe, type: 2}
   - {fileID: 11400000, guid: f5c1a9167260b6946b0cbe93baef4ad4, type: 2}
   - {fileID: 11400000, guid: 065158288e87cf64c94f7c742cc177b7, type: 2}
+  - {fileID: 11400000, guid: 6bf365712dc37b744ac8173eadaf8c22, type: 2}
+  - {fileID: 11400000, guid: df12f49b7f1160e448bfd76c533ffca8, type: 2}
+  - {fileID: 11400000, guid: ae7e3293cb2091f45907154f326b17b9, type: 2}
+  - {fileID: 11400000, guid: 224d6b25b9e91324ea4e8fe3b906f7d1, type: 2}
+  - {fileID: 11400000, guid: 8c2681a6ab0a6be4b91969d58a628b70, type: 2}
+  - {fileID: 11400000, guid: f3812695040e4804891b3c9e91d05059, type: 2}
+  - {fileID: 11400000, guid: fd8aa2869b4f2c645b8584f508b40762, type: 2}
   _teller: {fileID: 544593812}
-  _partToLoad: 0
-  _defaultStoryNumeration: 1
+  _partToLoad: 10
+  _defaultStoryNumeration: 0
   _dropDown: {fileID: 1173468362}
 --- !u!4 &544593814
 Transform:

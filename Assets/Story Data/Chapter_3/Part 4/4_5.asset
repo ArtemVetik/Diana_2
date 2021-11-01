@@ -12,14 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcd1ea30f740fc9408cd741ec35c0ac0, type: 3}
   m_Name: 4_5
   m_EditorClassIdentifier: 
-  Phrases: []
-  _type: 0
-  _emotions: 
+  Phrases:
+  - "\u041D\u0438\u0447\u0435\u043C \u043D\u0435 \u043C\u043E\u0433\u0443 \u0412\u0430\u043C
+    \u043F\u043E\u043C\u043E\u0447\u044C."
+  - "\u041F\u043E\u0437\u0432\u043E\u043D\u0438\u0442\u0435 \u0441 \u0443\u0442\u0440\u0430
+    \u0432 \u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0442\u0443\u0440\u0443
+    - \u0438 \u0447\u0442\u043E-\u0442\u043E \u0443\u0437\u043D\u0430\u0435\u0442\u0435."
+  _type: 1
+  _emotions: 2e0000002e000000
   _background: 0
-  _character: 0
-  _showCharacterOnStart: 0
-  _hideCharacterOnFinish: 0
-  _fadeIn: 0
+  _character: 5
+  _showCharacterOnStart: 1
+  _hideCharacterOnFinish: 1
+  _fadeIn: 1
   _fadeOut: 0
   _lastUnitInPart: 0
   _bgMoveData: {fileID: 0}

@@ -79,7 +79,14 @@ public static class ConstantKeys
         kind_look,
         nervous,
         ñold_view,
-        ñuriosity
+        ñuriosity,
+        arrogance,
+        compassion, 
+        hope,
+        talk_mobile,
+        laugh_angry,
+        cry,
+        upset
     }
 
     public enum Backgrounds

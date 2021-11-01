@@ -4,10 +4,12 @@ public static class ConstantKeys
     {
         public const float CharacterMovingDuration = 0.25f;
         public const float PreMessageDelay = 0.3f;
-        public const float FadingDuration = 0.35f;
-        public const float SceneLoadFadingDuration = 1;
+        public const float FadingDuration = 0.5f;
+        public const float SceneLoadFadingDuration = 1.5f;
         public const float AnimationMixDuration = 1;
         public const float BackgroundMoveDuration = 4f;
+
+        public const string BalanceSaveKey = "Balance save key";
     }
 
     public enum PhraseTypes
@@ -27,7 +29,8 @@ public static class ConstantKeys
         Mateo,
         Knopa,
         Nurse,
-        Granny
+        Granny,
+        Doctor
     }
 
     public enum Emotions

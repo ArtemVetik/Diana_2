@@ -24,7 +24,11 @@ public class Fader : MonoBehaviour
     private void OnEnable()
     {
         InitFader();
-        FadeOut();
+    }
+
+    private void Start()
+    {
+        OnLoadFadeOut();
     }
 
     public void FadeIn(Action OnFaded = null)
@@ -37,12 +41,18 @@ public class Fader : MonoBehaviour
         _fader.DOColor(new Color(_fader.color.r, _fader.color.g, _fader.color.b, 0), ConstantKeys.GlobalKeys.FadingDuration).OnComplete(() => { if (OnFadedOut != null) OnFadedOut(); });
     }
 
+    public void OnLoadFadeOut()
+    {
+        Debug.LogError("ON LOAD FADE OUT");
+        _fader.DOColor(new Color(_fader.color.r, _fader.color.g, _fader.color.b, 0), ConstantKeys.GlobalKeys.SceneLoadFadingDuration);
+    }
+
     public void Reset()
     {
         _fader.color = new Color(_fader.color.r, _fader.color.g, _fader.color.b, 1);
     }
 
-    private void InitFader()
+    public void InitFader()
     {
         _fader.raycastTarget = false;
         _canvas.renderMode = RenderMode.ScreenSpaceOverlay;

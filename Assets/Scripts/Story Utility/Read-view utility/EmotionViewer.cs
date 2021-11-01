@@ -20,7 +20,6 @@ public class EmotionViewer : MonoBehaviour
     private void OnCharacterChanged(Character character)
     {
         _currentSkeleton = character.Skeleton;
-        Debug.LogError("Init new character " + _currentSkeleton);
     }
 
     public void ShowEmotion(ConstantKeys.Emotions emotion)
@@ -29,7 +28,6 @@ public class EmotionViewer : MonoBehaviour
         {
             var newTrack = _currentSkeleton.state.SetAnimation(0, emotion.ToString(), true);
             newTrack.MixDuration = ConstantKeys.GlobalKeys.AnimationMixDuration;
-            Debug.LogError("Set emotion " + emotion);
         }
         else
         {

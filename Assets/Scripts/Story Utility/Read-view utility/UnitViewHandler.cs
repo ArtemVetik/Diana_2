@@ -78,18 +78,18 @@ public class UnitViewHandler : MonoBehaviour
         if (_currentUnit.FadeOut)
         {
             Singleton<Fader>.Instance.FadeOut();
-
-            if (_currentUnit.BackgroundMoveData != null)
-            {
-                _backgroundViewer.MoveBackground(_currentUnit.BackgroundMoveData);
-                yield return _backgroundMoveDelay;
-            }
-            else
-            {
-                yield return _fadingDelay;
-            }
         }
-        
+
+        if (_currentUnit.BackgroundMoveData != null)
+        {
+            _backgroundViewer.MoveBackground(_currentUnit.BackgroundMoveData);
+            yield return _backgroundMoveDelay;
+        }
+        else
+        {
+            yield return _fadingDelay;
+        }
+
         if (_currentUnit.ShowCharacterOnStart)
         {
             _characterViewer.InitCharacter(_currentUnit.Character);

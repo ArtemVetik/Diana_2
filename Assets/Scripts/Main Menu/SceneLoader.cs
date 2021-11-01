@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -19,16 +17,16 @@ public class SceneLoader : MonoBehaviour
 
     private void OnEnable()
     {
-        _button.onClick.AddListener(LoadScene);
+        _button.onClick.AddListener(LoadSceneAsync);
     }
 
     private void OnDisable()
     {
-        _button.onClick.RemoveListener(LoadScene);
+        _button.onClick.RemoveListener(LoadSceneAsync);
     }
 
-    private void LoadScene()
+    private void LoadSceneAsync()
     {
-        Singleton<Fader>.Instance.FadeIn(() => SceneManager.LoadScene(_targetScene.ScenePath));
+        Singleton<Fader>.Instance.FadeIn(() => SceneManager.LoadSceneAsync(_targetScene.ScenePath));
     }
 }

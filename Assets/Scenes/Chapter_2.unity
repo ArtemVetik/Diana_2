@@ -696,7 +696,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fceb8b68f2680e043b79ca09fb70365d, type: 2}
   _teller: {fileID: 544593812}
   _partToLoad: 27
-  _defaultStoryNumeration: 0
+  _defaultStoryNumeration: 1
   _dropDown: {fileID: 1173468362}
 --- !u!4 &544593814
 Transform:

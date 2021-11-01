@@ -51,6 +51,7 @@ public class StoryPartToggler : MonoBehaviour
 
     private void OnEnable()
     {
+        Singleton<Fader>.Instance.InitFader();
         CreateDropDownMenu();
         _teller.NewPartNeeded += OnNewPartNeeded;
         _teller.NewVariantPartNeeded += OnNewVariantPartNeeded;
@@ -60,11 +61,6 @@ public class StoryPartToggler : MonoBehaviour
     {
         _teller.NewPartNeeded -= OnNewPartNeeded;
         _teller.NewVariantPartNeeded -= OnNewVariantPartNeeded;
-    }
-
-    private void Start()
-    {
-        Singleton<Fader>.Instance.FadeOut();
     }
 
     private void CreateDropDownMenu()

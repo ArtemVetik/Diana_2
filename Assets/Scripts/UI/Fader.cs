@@ -2,7 +2,6 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
-using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Image))]
 [RequireComponent(typeof(Canvas))]
@@ -33,6 +32,7 @@ public class Fader : MonoBehaviour
 
     public void FadeIn(Action OnFaded = null)
     {
+        _fader.raycastTarget = true;
         _fader.DOColor(new Color(_fader.color.r, _fader.color.g, _fader.color.b, 1), ConstantKeys.GlobalKeys.FadingDuration).OnComplete(() => { if (OnFaded != null) OnFaded(); });
     }
 
@@ -43,8 +43,7 @@ public class Fader : MonoBehaviour
 
     public void OnLoadFadeOut()
     {
-        Debug.LogError("ON LOAD FADE OUT");
-        _fader.DOColor(new Color(_fader.color.r, _fader.color.g, _fader.color.b, 0), ConstantKeys.GlobalKeys.SceneLoadFadingDuration);
+        _fader.DOColor(new Color(_fader.color.r, _fader.color.g, _fader.color.b, 0), ConstantKeys.GlobalKeys.SceneLoadFadingDuration).OnComplete(() => { _fader.raycastTarget = false; });
     }
 
     public void Reset()
@@ -62,5 +61,6 @@ public class Fader : MonoBehaviour
         _scaler.screenMatchMode = CanvasScaler.ScreenMatchMode.MatchWidthOrHeight;
         _scaler.scaleFactor = 0.5f;
         _fader.color = Color.black;
+        _fader.raycastTarget = true;
     }
 }

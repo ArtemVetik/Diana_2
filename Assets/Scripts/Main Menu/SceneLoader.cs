@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Tymski;
+using System.Collections;
 
 [RequireComponent(typeof(Button))]
 public class SceneLoader : MonoBehaviour
@@ -17,16 +18,35 @@ public class SceneLoader : MonoBehaviour
 
     private void OnEnable()
     {
-        _button.onClick.AddListener(LoadSceneAsync);
+        _button.onClick.AddListener(LoadAfterFadeIn);
     }
 
     private void OnDisable()
     {
-        _button.onClick.RemoveListener(LoadSceneAsync);
+        _button.onClick.RemoveListener(LoadAfterFadeIn);
     }
 
-    private void LoadSceneAsync()
+    private void LoadAfterFadeIn()
     {
-        Singleton<Fader>.Instance.FadeIn(() => SceneManager.LoadSceneAsync(_targetScene.ScenePath));
+        Singleton<Fader>.Instance.FadeIn(Load);
+    }
+
+    private void Load()
+    {
+        StartCoroutine(LoadSceneAsync());
+    }
+
+    private IEnumerator LoadSceneAsync()
+    {
+        var sceneLoading = SceneManager.LoadSceneAsync(_targetScene.ScenePath);
+
+        sceneLoading.allowSceneActivation = false;
+
+        while(sceneLoading.progress < 0.9f)
+        {
+            yield return null;
+        }
+
+        sceneLoading.allowSceneActivation = true;
     }
 }

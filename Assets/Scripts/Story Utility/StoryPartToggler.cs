@@ -9,7 +9,6 @@ public class StoryPartToggler : MonoBehaviour
     [SerializeField] List<StoryPart> _storyParts = new List<StoryPart>();
     [SerializeField] private StoryTeller _teller;
 
-
     [SerializeField] private Part _partToLoad;
     [SerializeField] private bool _defaultStoryNumeration = true;
     [SerializeField] private Dropdown _dropDown;

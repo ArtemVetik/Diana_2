@@ -17,15 +17,14 @@ MonoBehaviour:
     \u0437\u0430 \u0434\u0432\u0435\u0440\u044C\u044E, \u041C\u0430\u0442\u0435\u043E
     \u0432\u044B\u0442\u044F\u043D\u0443\u043B \u043C\u043E\u0431\u0438\u043B\u044C\u043D\u044B\u0439."
   - "\u041F\u0440\u043E\u0447\u0438\u0442\u0430\u0432 \u0441\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u0435,
-    \u043E\u043D \u0431\u044B\u0441\u0442\u0440\u043E \u0432\u0441\u0442\u0430\u043B
-    \u0438 \u043F\u043E\u0448\u0435\u043B \u043A \u0432\u044B\u0445\u043E\u0434\u0443."
+    \u043E\u043D..."
   _type: 2
   _emotions: 0d0000000d000000
-  _background: 5
+  _background: 6
   _character: 3
   _showCharacterOnStart: 0
   _hideCharacterOnFinish: 0
-  _moveBackgroundOnStart: 0
-  _fadeIn: 1
+  _fadeIn: 0
   _fadeOut: 0
-  _lastUnitInPart: 0
+  _lastUnitInPart: 1
+  _bgMoveData: {fileID: 0}

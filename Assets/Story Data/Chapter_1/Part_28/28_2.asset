@@ -19,8 +19,8 @@ MonoBehaviour:
   _background: 6
   _character: 3
   _showCharacterOnStart: 1
-  _hideCharacterOnFinish: 1
-  _moveBackgroundOnStart: 0
+  _hideCharacterOnFinish: 0
   _fadeIn: 0
   _fadeOut: 1
   _lastUnitInPart: 0
+  _bgMoveData: {fileID: 0}

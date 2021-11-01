@@ -24,4 +24,4 @@ MonoBehaviour:
   _fadeIn: 1
   _fadeOut: 1
   _lastUnitInPart: 0
-  _bgMoveData: {fileID: 11400000, guid: 7c3186bae449be64baf8a42d2bc63b3d, type: 2}
+  _bgMoveData: {fileID: 11400000, guid: 94ed8bbc33769234bb25fe93f5a1869b, type: 2}

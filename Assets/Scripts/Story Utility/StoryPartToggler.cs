@@ -42,6 +42,9 @@ public class StoryPartToggler : MonoBehaviour
         Part_26,
         Part_27,
         Part_28,
+        Part_29,
+        Part_30,
+        Part_31
     }
 
 

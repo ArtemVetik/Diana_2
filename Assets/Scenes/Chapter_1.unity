@@ -922,9 +922,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8fc8d5dd803edb349b004f2bf29d9419, type: 2}
   - {fileID: 11400000, guid: e3f0d4c19d1825c49bff922acee50f9e, type: 2}
   - {fileID: 11400000, guid: d8850dfb9eb5eb84d884677948658d81, type: 2}
+  - {fileID: 11400000, guid: 6f6d89738ef356a4cb26ec09469690ca, type: 2}
+  - {fileID: 11400000, guid: f819096ec18947c46941b8377e47857a, type: 2}
+  - {fileID: 11400000, guid: 48ee5dd7498da114abdcea46392c7abf, type: 2}
   _teller: {fileID: 544593812}
-  _partToLoad: 0
-  _defaultStoryNumeration: 1
+  _partToLoad: 27
+  _defaultStoryNumeration: 0
   _dropDown: {fileID: 1678237467}
 --- !u!4 &544593814
 Transform:

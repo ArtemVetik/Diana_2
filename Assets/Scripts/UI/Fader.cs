@@ -38,7 +38,7 @@ public class Fader : MonoBehaviour
 
     public void FadeOut(Action OnFadedOut = null)
     {
-        _fader.DOColor(new Color(_fader.color.r, _fader.color.g, _fader.color.b, 0), ConstantKeys.GlobalKeys.FadingDuration).OnComplete(() => { if (OnFadedOut != null) OnFadedOut(); });
+        _fader.DOColor(new Color(_fader.color.r, _fader.color.g, _fader.color.b, 0), ConstantKeys.GlobalKeys.FadingDuration).OnComplete(() => { if (OnFadedOut != null) OnFadedOut(); _fader.raycastTarget = false; });
     }
 
     public void OnLoadFadeOut()

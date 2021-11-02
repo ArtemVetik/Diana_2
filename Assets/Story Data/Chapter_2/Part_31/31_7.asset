@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Phrases:
   - "\u041C\u0430\u0442\u0435\u043E!!!"
-  _type: 0
+  _type: 1
   _emotions: 04000000
-  _background: 32
+  _background: 49
   _character: 0
   _showCharacterOnStart: 1
   _hideCharacterOnFinish: 1

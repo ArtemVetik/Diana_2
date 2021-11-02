@@ -19,14 +19,14 @@ MonoBehaviour:
     \u0432 \u0442\u0438\u0448\u0438\u043D\u0435."
   _type: 3
   _emotions: 
-  _background: 18
+  _background: 61
   _character: 0
   _showCharacterOnStart: 0
   _hideCharacterOnFinish: 0
   _fadeIn: 0
   _fadeOut: 0
   _lastUnitInPart: 1
-  _bgMoveData: {fileID: 0}
+  _bgMoveData: {fileID: 11400000, guid: fba4cfd1a93edbb4ba08daea32102e43, type: 2}
   _nextParts:
   - {fileID: 11400000, guid: 224d6b25b9e91324ea4e8fe3b906f7d1, type: 2}
   - {fileID: 11400000, guid: 8c2681a6ab0a6be4b91969d58a628b70, type: 2}

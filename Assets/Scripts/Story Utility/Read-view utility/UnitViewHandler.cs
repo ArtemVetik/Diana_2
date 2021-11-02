@@ -56,7 +56,6 @@ public class UnitViewHandler : MonoBehaviour
         }
         else
         {
-            Debug.LogError("pre-message delay");
             yield return _preMessageDelay;
 
             if (_currentUnit.HasEmotions)
@@ -127,7 +126,7 @@ public class UnitViewHandler : MonoBehaviour
             yield return _fadingDelay;
         }
 
-        _emotionViewer.ResetEmotion();
+        //_emotionViewer.ResetEmotion();
 
         yield return null;
 
@@ -150,7 +149,6 @@ public class UnitViewHandler : MonoBehaviour
         if (_currentUnit.FadeOut)
         {
             Singleton<Fader>.Instance.FadeOut();
-            Debug.LogError("variant Fader delay");
         }
 
         _phraseViewer.ViewVariableUnit();

@@ -695,8 +695,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: de9339c67402dff49ab1e826a7960646, type: 2}
   - {fileID: 11400000, guid: fceb8b68f2680e043b79ca09fb70365d, type: 2}
   _teller: {fileID: 544593812}
-  _partToLoad: 27
-  _defaultStoryNumeration: 1
+  _partToLoad: 30
+  _defaultStoryNumeration: 0
   _dropDown: {fileID: 1173468362}
 --- !u!4 &544593814
 Transform:
@@ -3441,8 +3441,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _backgrounds:
-  - {fileID: 21300000, guid: a0ba813135385114ba411aceddb8b8da, type: 3}
-  - {fileID: 21300000, guid: 451b88035a307c74390ab324e1a90de0, type: 3}
   - {fileID: 21300000, guid: 4b3dbe6105aa3994cabf52fd00550284, type: 3}
   - {fileID: 21300000, guid: baef0191d486bcf408d15be695c4f059, type: 3}
   - {fileID: 21300000, guid: ee56bde4ab997aa4dad81ea5c10e52fa, type: 3}
@@ -3470,7 +3468,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4edfe5cccaf89db4f8b33666baba7ba0, type: 3}
   - {fileID: 21300000, guid: 885e50882a051aa4ab4afbbfd91de79b, type: 3}
   - {fileID: 21300000, guid: dae54c74bef620e45b73028dea2695e7, type: 3}
-  - {fileID: 21300000, guid: b3ce23e0c278aad45898240b42f0446b, type: 3}
   - {fileID: 21300000, guid: 61178a4f85d909d41a15e6e5e2e6ae3c, type: 3}
   - {fileID: 21300000, guid: 89341f9628c1b1840908b198ba6626af, type: 3}
   - {fileID: 21300000, guid: b4e5c56c7cfabfa4383fe991faef054d, type: 3}
@@ -3483,6 +3480,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 33adaa94a7dba2249b45caf455b098fd, type: 3}
   - {fileID: 21300000, guid: e91f16d3e6bb8624f8b7c80981edfde5, type: 3}
   - {fileID: 21300000, guid: 47e8214a035cf204895504b8ac7a8751, type: 3}
+  - {fileID: 21300000, guid: d7c40e194b96d314fa8b8f165252f12a, type: 3}
+  - {fileID: 21300000, guid: 0cb0562c95fad8c4290bde19c599d7e4, type: 3}
+  - {fileID: 21300000, guid: 7f8c3cfc3d08aea46a6d4b49a0c8042e, type: 3}
 --- !u!1 &1976101162
 GameObject:
   m_ObjectHideFlags: 0

@@ -20,11 +20,11 @@ MonoBehaviour:
     \u043A\u0430\u043A \u043D\u043E\u0432\u0435\u043D\u044C\u043A\u0438\u0439."
   _type: 1
   _emotions: 2f0000002f000000
-  _background: 0
+  _background: 57
   _character: 5
   _showCharacterOnStart: 1
   _hideCharacterOnFinish: 0
   _fadeIn: 0
   _fadeOut: 0
   _lastUnitInPart: 0
-  _bgMoveData: {fileID: 0}
+  _bgMoveData: {fileID: 11400000, guid: 79c7db1d2b6267c4899b332bffdb0138, type: 2}

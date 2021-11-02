@@ -16,11 +16,11 @@ MonoBehaviour:
   - 
   _type: 2
   _emotions: 
-  _background: 26
+  _background: 41
   _character: 0
   _showCharacterOnStart: 0
   _hideCharacterOnFinish: 0
   _fadeIn: 1
   _fadeOut: 1
   _lastUnitInPart: 0
-  _bgMoveData: {fileID: 11400000, guid: 7c3186bae449be64baf8a42d2bc63b3d, type: 2}
+  _bgMoveData: {fileID: 11400000, guid: cae98e8e7e7dd5b4caa46a8a00fb90c4, type: 2}

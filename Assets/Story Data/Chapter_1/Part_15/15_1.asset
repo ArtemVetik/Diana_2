@@ -16,7 +16,7 @@ MonoBehaviour:
   - "\u0414\u0438\u0430\u043D\u0430 \u043F\u043B\u043E\u0445\u043E \u0441\u043F\u0430\u043B\u0430
     \u0432\u0441\u044E \u043D\u043E\u0447\u044C."
   _type: 2
-  _emotions: 0d000000
+  _emotions: 01000000
   _background: 15
   _character: 0
   _showCharacterOnStart: 0
@@ -24,4 +24,4 @@ MonoBehaviour:
   _fadeIn: 0
   _fadeOut: 1
   _lastUnitInPart: 0
-  _bgMoveData: {fileID: 11400000, guid: 7c3186bae449be64baf8a42d2bc63b3d, type: 2}
+  _bgMoveData: {fileID: 11400000, guid: cae98e8e7e7dd5b4caa46a8a00fb90c4, type: 2}

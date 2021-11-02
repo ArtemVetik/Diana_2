@@ -6,6 +6,7 @@ public class EmotionViewer : MonoBehaviour
 {
     [SerializeField] private CharacterViewer _characterViewer;
     private SkeletonAnimation _currentSkeleton;
+    private string _previousEmotion = string.Empty;
 
     private void OnEnable()
     {
@@ -26,8 +27,12 @@ public class EmotionViewer : MonoBehaviour
     {
         if (IsAnimationAvailable(emotion.ToString()))
         {
-            var newTrack = _currentSkeleton.state.SetAnimation(0, emotion.ToString(), true);
-            newTrack.MixDuration = ConstantKeys.GlobalKeys.AnimationMixDuration;
+            if(emotion.ToString() != _previousEmotion)
+            {
+                var newTrack = _currentSkeleton.state.SetAnimation(0, emotion.ToString(), true);
+                newTrack.MixDuration = ConstantKeys.GlobalKeys.AnimationMixDuration;
+                _previousEmotion = emotion.ToString();
+            }
         }
         else
         {

@@ -20,7 +20,7 @@ MonoBehaviour:
     \u0438 \u043F\u043E\u043B\u0438\u0446\u0435\u0439\u0441\u043A\u0438\u0435."
   _type: 2
   _emotions: 
-  _background: 0
+  _background: 52
   _character: 6
   _showCharacterOnStart: 1
   _hideCharacterOnFinish: 1

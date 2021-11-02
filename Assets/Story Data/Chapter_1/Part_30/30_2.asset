@@ -18,7 +18,7 @@ MonoBehaviour:
     \u0432 \u043B\u0438\u0446\u0435."
   _type: 2
   _emotions: 02000000
-  _background: 5
+  _background: 50
   _character: 0
   _showCharacterOnStart: 1
   _hideCharacterOnFinish: 0

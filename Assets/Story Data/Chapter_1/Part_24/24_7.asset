@@ -18,11 +18,11 @@ MonoBehaviour:
     \u0441\u043B\u0435\u0437\u044B."
   _type: 2
   _emotions: 1a000000
-  _background: 5
+  _background: 50
   _character: 0
   _showCharacterOnStart: 1
   _hideCharacterOnFinish: 0
-  _moveBackgroundOnStart: 0
   _fadeIn: 0
-  _fadeOut: 1
+  _fadeOut: 0
   _lastUnitInPart: 0
+  _bgMoveData: {fileID: 0}

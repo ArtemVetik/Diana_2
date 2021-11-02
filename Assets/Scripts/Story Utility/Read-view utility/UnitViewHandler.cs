@@ -83,7 +83,11 @@ public class UnitViewHandler : MonoBehaviour
         if (_currentUnit.BackgroundMoveData != null)
         {
             _backgroundViewer.MoveBackground(_currentUnit.BackgroundMoveData);
-            yield return _backgroundMoveDelay;
+
+            if(!_currentUnit.BackgroundMoveData.Fixed)
+            {
+                yield return _backgroundMoveDelay;
+            }
         }
         else
         {

@@ -33,6 +33,10 @@ public class BackgroundViewer : MonoBehaviour
     public void MoveBackground(BackgroundMovementData data)
     {
         _backgroundSprite.transform.position = new Vector2(data.Start, transform.position.y);
-        _backgroundSprite.transform.DOMoveX(data.Finish, ConstantKeys.GlobalKeys.BackgroundMoveDuration);
+
+        if(!data.Fixed)
+        {
+            _backgroundSprite.transform.DOMoveX(data.Finish, ConstantKeys.GlobalKeys.BackgroundMoveDuration);
+        }
     }
 }

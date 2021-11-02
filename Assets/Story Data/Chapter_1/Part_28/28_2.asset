@@ -16,11 +16,11 @@ MonoBehaviour:
   - "\u0411\u0435\u0437 \u043F\u0440\u043E\u0431\u043B\u0435\u043C."
   _type: 1
   _emotions: 20000000
-  _background: 6
+  _background: 50
   _character: 3
   _showCharacterOnStart: 1
   _hideCharacterOnFinish: 0
   _fadeIn: 0
-  _fadeOut: 1
+  _fadeOut: 0
   _lastUnitInPart: 0
   _bgMoveData: {fileID: 0}

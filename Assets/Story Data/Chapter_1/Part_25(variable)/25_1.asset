@@ -22,14 +22,14 @@ MonoBehaviour:
     \u0440\u043E\u0434\u043D\u044E."
   _type: 0
   _emotions: 
-  _background: 0
+  _background: 50
   _character: 0
   _showCharacterOnStart: 0
   _hideCharacterOnFinish: 0
-  _moveBackgroundOnStart: 0
   _fadeIn: 0
-  _fadeOut: 1
+  _fadeOut: 0
   _lastUnitInPart: 1
+  _bgMoveData: {fileID: 0}
   _nextParts:
   - {fileID: 11400000, guid: 8fc8d5dd803edb349b004f2bf29d9419, type: 2}
   - {fileID: 11400000, guid: e3f0d4c19d1825c49bff922acee50f9e, type: 2}

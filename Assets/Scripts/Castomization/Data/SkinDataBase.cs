@@ -29,6 +29,11 @@ namespace Diana2.Castomization {
             return _skins.IndexOf(renderData);
         }
 
+        public bool Contains(SkinData skin)
+        {
+            return _skins.Contains(skin);
+        }
+
         public bool TryGetSkinByName(string skinName, out SkinData skinData)
         {
             skinData = null;

@@ -40,6 +40,9 @@ public class SkinDataBaseEditor : Editor
         }
 
         serializedObject.ApplyModifiedProperties();
+
+        if (GUI.changed)
+            EditorUtility.SetDirty(_dataBase);
     }
 
     private void RenderMainPage()
@@ -115,6 +118,7 @@ public class SkinDataBaseEditor : Editor
 
         GUILayout.BeginHorizontal();
         GUILayout.FlexibleSpace();
+
         if (GUILayout.Button("<"))
             _renderPage--;
         else if (GUILayout.Button(">"))

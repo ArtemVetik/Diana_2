@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7613040301799651105}
   - component: {fileID: 7613040301799651104}
   - component: {fileID: 7613040301799651107}
-  - component: {fileID: 7613040301799651106}
+  - component: {fileID: 1151470933504329864}
   m_Layer: 0
   m_Name: DianaModel
   m_TagString: Untagged
@@ -120,7 +120,7 @@ MonoBehaviour:
   _animationName: normal
   loop: 1
   timeScale: 1
---- !u!114 &7613040301799651106
+--- !u!114 &1151470933504329864
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,6 +132,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24e5ce71283e5164f93ce941c2cd0774, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetModel: 0
   _dataBase: {fileID: 11400000, guid: 30def64a8f8861242bca4d8bd110d905, type: 2}
-  _ddataBase: {fileID: 11400000, guid: a2b73e11eb5de8b4cb4bb76879cca56e, type: 2}

@@ -1,0 +1,237 @@
+
+Knopa.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body
+  rotate: true
+  xy: 703, 796
+  size: 333, 592
+  orig: 366, 598
+  offset: 18, 0
+  index: -1
+Eyes
+  rotate: false
+  xy: 2, 1993
+  size: 104, 43
+  orig: 104, 43
+  offset: 0, 0
+  index: -1
+Hair
+  rotate: false
+  xy: 1778, 1186
+  size: 258, 358
+  orig: 258, 403
+  offset: 0, 11
+  index: -1
+Hand_phone
+  rotate: true
+  xy: 1109, 1131
+  size: 216, 475
+  orig: 239, 475
+  offset: 23, 0
+  index: -1
+L_hand
+  rotate: true
+  xy: 660, 1925
+  size: 111, 723
+  orig: 115, 728
+  offset: 1, 0
+  index: -1
+L_leg
+  rotate: true
+  xy: 2, 1190
+  size: 187, 1105
+  orig: 314, 1189
+  offset: 127, 0
+  index: -1
+L_shoes
+  rotate: true
+  xy: 1508, 1903
+  size: 133, 202
+  orig: 133, 202
+  offset: 0, 0
+  index: -1
+L_sleeve
+  rotate: true
+  xy: 108, 1944
+  size: 92, 550
+  orig: 92, 550
+  offset: 0, 0
+  index: -1
+Neck
+  rotate: false
+  xy: 1385, 1916
+  size: 121, 120
+  orig: 121, 120
+  offset: 0, 0
+  index: -1
+Normal
+  rotate: true
+  xy: 552, 1750
+  size: 173, 224
+  orig: 179, 237
+  offset: 5, 1
+  index: -1
+R_hand
+  rotate: true
+  xy: 2, 990
+  size: 198, 699
+  orig: 234, 706
+  offset: 24, 3
+  index: -1
+R_leg
+  rotate: true
+  xy: 452, 1379
+  size: 170, 1099
+  orig: 170, 1099
+  offset: 0, 0
+  index: -1
+R_shoes
+  rotate: true
+  xy: 1712, 1898
+  size: 138, 196
+  orig: 138, 196
+  offset: 0, 0
+  index: -1
+R_sleeve
+  rotate: true
+  xy: 2, 1800
+  size: 142, 548
+  orig: 142, 548
+  offset: 0, 0
+  index: -1
+Skirt
+  rotate: true
+  xy: 1586, 784
+  size: 400, 427
+  orig: 400, 427
+  offset: 0, 0
+  index: -1
+Sweater
+  rotate: true
+  xy: 2, 620
+  size: 368, 581
+  orig: 857, 595
+  offset: 257, 0
+  index: -1
+emotions/Anger
+  rotate: true
+  xy: 1003, 1749
+  size: 174, 223
+  orig: 178, 236
+  offset: 4, 1
+  index: -1
+emotions/Brooding 
+  rotate: true
+  xy: 1228, 1740
+  size: 174, 223
+  orig: 178, 236
+  offset: 4, 1
+  index: -1
+emotions/Confusion 
+  rotate: true
+  xy: 1453, 1727
+  size: 174, 223
+  orig: 178, 236
+  offset: 4, 1
+  index: -1
+emotions/Dreaminess
+  rotate: true
+  xy: 1678, 1722
+  size: 174, 223
+  orig: 178, 236
+  offset: 4, 1
+  index: -1
+emotions/Fear
+  rotate: true
+  xy: 227, 1447
+  size: 175, 223
+  orig: 178, 236
+  offset: 3, 1
+  index: -1
+emotions/Interest
+  rotate: true
+  xy: 2, 1624
+  size: 174, 223
+  orig: 178, 236
+  offset: 4, 1
+  index: -1
+emotions/Interest-1
+  rotate: true
+  xy: 227, 1624
+  size: 174, 223
+  orig: 178, 236
+  offset: 4, 1
+  index: -1
+emotions/Normal
+  rotate: true
+  xy: 452, 1574
+  size: 174, 223
+  orig: 178, 236
+  offset: 4, 1
+  index: -1
+emotions/Pain
+  rotate: true
+  xy: 677, 1573
+  size: 174, 223
+  orig: 178, 236
+  offset: 4, 1
+  index: -1
+emotions/Sad
+  rotate: true
+  xy: 902, 1573
+  size: 174, 223
+  orig: 178, 236
+  offset: 4, 1
+  index: -1
+emotions/Silent_agreement
+  rotate: true
+  xy: 778, 1749
+  size: 174, 223
+  orig: 178, 236
+  offset: 4, 1
+  index: -1
+emotions/Silent_question
+  rotate: true
+  xy: 1127, 1564
+  size: 174, 223
+  orig: 178, 236
+  offset: 4, 1
+  index: -1
+emotions/Smiling
+  rotate: true
+  xy: 1352, 1551
+  size: 174, 223
+  orig: 178, 236
+  offset: 4, 1
+  index: -1
+emotions/Supplication 
+  rotate: true
+  xy: 1577, 1546
+  size: 174, 223
+  orig: 178, 236
+  offset: 4, 1
+  index: -1
+emotions/Suspicion 
+  rotate: true
+  xy: 1802, 1546
+  size: 174, 223
+  orig: 178, 236
+  offset: 4, 1
+  index: -1
+emotions/Tension 
+  rotate: true
+  xy: 2, 1448
+  size: 174, 223
+  orig: 178, 236
+  offset: 4, 1
+  index: -1
+emotions/Wide_smile
+  rotate: true
+  xy: 1553, 1349
+  size: 195, 223
+  orig: 199, 236
+  offset: 4, 1
+  index: -1

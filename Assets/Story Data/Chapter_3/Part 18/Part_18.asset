@@ -12,5 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7d9fffd1b6fe94449fd170f866b3f8d, type: 3}
   m_Name: Part_18
   m_EditorClassIdentifier: 
-  _units: []
+  _units:
+  - {fileID: 11400000, guid: fc05cb5e47bb70849b01bd7230ba4ef0, type: 2}
+  - {fileID: 11400000, guid: 7d8ba5febe3fc404585916adf65381df, type: 2}
+  - {fileID: 11400000, guid: 1c49714974f87154088bee6952a325fc, type: 2}
   _variable: 0

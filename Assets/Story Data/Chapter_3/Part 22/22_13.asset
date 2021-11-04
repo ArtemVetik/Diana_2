@@ -18,10 +18,10 @@ MonoBehaviour:
     \u0431\u043E\u043B\u044C\u043D\u0438\u0446\u044B."
   _type: 2
   _emotions: 01000000
-  _background: 0
+  _background: 15
   _character: 0
   _showCharacterOnStart: 0
-  _hideCharacterOnFinish: 0
+  _hideCharacterOnFinish: 1
   _fadeIn: 1
   _fadeOut: 0
   _lastUnitInPart: 1

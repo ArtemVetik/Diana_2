@@ -13,7 +13,7 @@ L_eye
   index: -1
 L_hand_1
   rotate: true
-  xy: 2, 847
+  xy: 1517, 973
   size: 232, 525
   orig: 232, 535
   offset: 0, 10
@@ -34,14 +34,14 @@ L_hand_3
   index: -1
 Leg_1
   rotate: true
-  xy: 1216, 957
+  xy: 2, 862
   size: 223, 766
   orig: 236, 766
   offset: 0, 0
   index: -1
 Leg_2
   rotate: true
-  xy: 1221, 1182
+  xy: 2, 1087
   size: 213, 794
   orig: 271, 794
   offset: 0, 0
@@ -69,7 +69,7 @@ R_eye
   index: -1
 R_hand_1
   rotate: true
-  xy: 721, 1055
+  xy: 770, 733
   size: 248, 493
   orig: 248, 567
   offset: 0, 74
@@ -83,14 +83,14 @@ R_hand_2
   index: -1
 Vanessa_dream_hair_light
   rotate: true
-  xy: 1190, 689
+  xy: 1265, 705
   size: 266, 601
   orig: 266, 601
   offset: 0, 0
   index: -1
 Vanessa_dream_hand_light
   rotate: true
-  xy: 450, 1486
+  xy: 389, 1470
   size: 165, 868
   orig: 180, 868
   offset: 0, 0
@@ -153,7 +153,7 @@ Vanessa_dress_images/eye_pupil
   index: -1
 Vanessa_dress_images/face
   rotate: true
-  xy: 454, 1667
+  xy: 265, 1715
   size: 187, 250
   orig: 205, 276
   offset: 11, 23
@@ -186,44 +186,37 @@ Vanessa_dress_images/teeth
   orig: 49, 13
   offset: 4, 0
   index: -1
-Vanessa_dress_images/v2_Body
-  rotate: true
-  xy: 601, 282
-  size: 405, 1100
-  orig: 405, 1100
-  offset: 0, 0
-  index: -1
 Vanessa_dress_images/v2_L_hand
   rotate: true
-  xy: 706, 1653
+  xy: 2, 1302
   size: 166, 803
   orig: 166, 803
   offset: 0, 0
   index: -1
 Vanessa_dress_images/v2_L_leg
   rotate: true
-  xy: 2, 1081
+  xy: 798, 983
   size: 222, 717
   orig: 226, 717
   offset: 0, 0
   index: -1
 Vanessa_dress_images/v2_R_hand
   rotate: true
-  xy: 389, 1305
+  xy: 1114, 1207
   size: 179, 830
   orig: 197, 844
   offset: 18, 14
   index: -1
 Vanessa_dress_images/v2_R_leg
   rotate: true
-  xy: 1320, 1397
+  xy: 1259, 1388
   size: 216, 722
   orig: 262, 722
   offset: 4, 0
   index: -1
 Vanessa_dress_images/v2_hair_back
   rotate: true
-  xy: 2, 1725
+  xy: 517, 1656
   size: 177, 450
   orig: 191, 450
   offset: 8, 0
@@ -244,7 +237,7 @@ Vanessa_dress_images/v2_hair_front
   index: -1
 Vanessa_dress_images/v2_hair_top
   rotate: true
-  xy: 529, 800
+  xy: 807, 1215
   size: 253, 305
   orig: 253, 305
   offset: 0, 0
@@ -265,14 +258,14 @@ contur
   index: -1
 contur_Dress_body
   rotate: true
-  xy: 2, 77
+  xy: 2, 198
   size: 203, 1458
   orig: 203, 1458
   offset: 0, 0
   index: -1
 contur_Dress_hair
   rotate: true
-  xy: 2, 486
+  xy: 2, 548
   size: 312, 597
   orig: 360, 597
   offset: 9, 0
@@ -284,23 +277,30 @@ contur_dress_leg
   orig: 136, 431
   offset: 0, 0
   index: -1
+emostions/Pain
+  rotate: true
+  xy: 2, 1728
+  size: 174, 261
+  orig: 1920, 3000
+  offset: 807, 2345
+  index: -1
 hair_1
   rotate: true
-  xy: 2, 1532
+  xy: 1421, 1606
   size: 191, 446
   orig: 191, 446
   offset: 0, 0
   index: -1
 hair_2
   rotate: false
-  xy: 836, 725
+  xy: 601, 403
   size: 352, 328
   orig: 352, 328
   offset: 0, 0
   index: -1
 hair_3
   rotate: true
-  xy: 1511, 1615
+  xy: 969, 1637
   size: 182, 450
   orig: 190, 450
   offset: 0, 0
@@ -314,7 +314,7 @@ lips_top
   index: -1
 robe_1
   rotate: true
-  xy: 2, 1310
+  xy: 2, 1493
   size: 220, 385
   orig: 221, 385
   offset: 0, 0
@@ -330,6 +330,13 @@ Vanessa_dream_light
   xy: 2, 2
   size: 227, 1449
   orig: 227, 1449
+  offset: 0, 0
+  index: -1
+Vanessa_dress_images/v2_Body
+  rotate: false
+  xy: 717, 351
+  size: 405, 1100
+  orig: 405, 1100
   offset: 0, 0
   index: -1
 body

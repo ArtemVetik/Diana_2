@@ -20,7 +20,7 @@ namespace Diana2.Castomization
 
         private void InitializeSkins()
         {
-            var savedSkins = new SavedSkins(SaveModel.Diana, _dataBase);
+            var savedSkins = new SavedSkins(_dataBase);
             savedSkins.Load();
 
             _selectedSkins = new Dictionary<string, string>();
@@ -62,7 +62,7 @@ namespace Diana2.Castomization
 
         public void SaveSkins()
         {
-            var savedSkins = new SavedSkins(SaveModel.Diana, _dataBase);
+            var savedSkins = new SavedSkins(_dataBase);
             foreach (var skinName in _selectedSkins.Values)
             {
                 if (_dataBase.TryGetSkinByName(skinName, out SkinData data))
@@ -74,7 +74,7 @@ namespace Diana2.Castomization
 
         public void ResetSkins()
         {
-            var saved = new SavedSkins(SaveModel.Diana, _dataBase);
+            var saved = new SavedSkins(_dataBase);
             saved.Save();
 
             InitializeSkins();

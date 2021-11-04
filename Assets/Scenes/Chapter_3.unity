@@ -675,8 +675,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8c2681a6ab0a6be4b91969d58a628b70, type: 2}
   - {fileID: 11400000, guid: f3812695040e4804891b3c9e91d05059, type: 2}
   - {fileID: 11400000, guid: fd8aa2869b4f2c645b8584f508b40762, type: 2}
+  - {fileID: 11400000, guid: 4036ac0e61020dc47a193475fc35c849, type: 2}
+  - {fileID: 11400000, guid: 253f130ce57c18a4287cd83228c9e69e, type: 2}
+  - {fileID: 11400000, guid: 7c3521f663e2fe14ca0499b4942477e6, type: 2}
+  - {fileID: 11400000, guid: 9c71abfd256619640879b66c948c9aea, type: 2}
+  - {fileID: 11400000, guid: b3aa36d3ab2971a4c92f3d6ad00eda68, type: 2}
+  - {fileID: 11400000, guid: 2148c96505b1747448747291dd20e45f, type: 2}
+  - {fileID: 11400000, guid: c3a3c00ac63c7314b986d0cf8ce7541b, type: 2}
+  - {fileID: 11400000, guid: 4efe09ba46ef5eb4aa4fadf6978dc50c, type: 2}
   _teller: {fileID: 544593812}
-  _partToLoad: 11
+  _partToLoad: 16
   _defaultStoryNumeration: 0
   _dropDown: {fileID: 1173468362}
 --- !u!4 &544593814
@@ -2141,7 +2149,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7613040301799651110, guid: cb5c921fd28c1604e972dcf7155bac13, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -15
       objectReference: {fileID: 0}
     - target: {fileID: 7613040301799651110, guid: cb5c921fd28c1604e972dcf7155bac13, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3710,6 +3718,16 @@ MonoBehaviour:
   - {fileID: 21300000, guid: b9f4e5bf615d14f4e81eab8d14908a5e, type: 3}
   - {fileID: 21300000, guid: 001b3b6d0afb9834a8264967a16ec597, type: 3}
   - {fileID: 21300000, guid: 8f5aa65fa73507e4da1f1a458d10d41c, type: 3}
+  - {fileID: 21300000, guid: c1ad1b39c1a8c7740857b3fa87619937, type: 3}
+  - {fileID: 21300000, guid: b410c9e69a773bf44b38f9a1834fe5fc, type: 3}
+  - {fileID: 21300000, guid: 4ba08784c59c2fa4eafb4e461aed40e1, type: 3}
+  - {fileID: 21300000, guid: 83c6ec58720c1bf42b19281b57fb8221, type: 3}
+  - {fileID: 21300000, guid: d7c40e194b96d314fa8b8f165252f12a, type: 3}
+  - {fileID: 21300000, guid: f9fa4dff85d4e62469165ecbb9b88ac9, type: 3}
+  - {fileID: 21300000, guid: b1d9203e37843d0459dd5a2940ee3856, type: 3}
+  - {fileID: 21300000, guid: 76d3c971cde5af042988e1ab58244bec, type: 3}
+  - {fileID: 21300000, guid: 99160d20d20b39140910a52aa202a402, type: 3}
+  - {fileID: 21300000, guid: c7543e3fd5162f4468d1ffc3488d68fa, type: 3}
 --- !u!1 &1976101162
 GameObject:
   m_ObjectHideFlags: 0

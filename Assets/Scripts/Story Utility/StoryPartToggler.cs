@@ -138,7 +138,6 @@ public class StoryPartToggler : MonoBehaviour
                     _variablePartVariants.Add(variant.GetNextPart(0));
                 }
             }
-            
         }
 
         _teller.InitializeStory(nextPart);

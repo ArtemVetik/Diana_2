@@ -12,10 +12,10 @@ public class VariantButton : MonoBehaviour
     public void Init(string text, int nextPartIndex)
     {
         _phrase.text = text;
-        _button.onClick.AddListener(() => SetNextUnit(nextPartIndex));
+        _button.onClick.AddListener(() => SetVariant(nextPartIndex));
     }
 
-    private void SetNextUnit(int index)
+    private void SetVariant(int index)
     {
         transform.parent.gameObject.SetActive(false);
         VariantChosen?.Invoke(index);

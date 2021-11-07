@@ -157,6 +157,9 @@ public static class ConstantKeys
         OP_DV_vanes_bedroom_day,
         OP_DV_vanes_bedroom_night,
         OP_car_bw,
-        OP_Diana_bathroom_day
+        OP_Diana_bathroom_day,
+        OP_note_rose,
+        OP_incoming_call_Dimitrii,
+        OP_porch_note_day
     }
 }

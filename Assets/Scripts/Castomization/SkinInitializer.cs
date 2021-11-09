@@ -64,5 +64,24 @@ namespace Diana2.Castomization
             skeleton.SetSlotsToSetupPose();
             _skeletonAnimation.Update(0);
         }
+
+        public void MergePresetWithSave(SkinPreset preset)
+        {
+            var savedSkins = new SavedSkins(_dataBase);
+            savedSkins.Load();
+
+            foreach (var skinName in preset.Skins)
+            {
+                if (_dataBase.TryGetSkinByName(skinName, out SkinData data))
+                {
+                    var skinKey = data.GetSkinKey();
+                    savedSkins.RemoveAllSkinByKey(skinKey);
+                    savedSkins.AddSkin(data);
+                }
+            }
+
+            savedSkins.Save();
+            Initialize(savedSkins);
+        }
     }
 }

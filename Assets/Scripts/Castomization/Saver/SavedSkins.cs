@@ -34,6 +34,17 @@ namespace Diana2.Castomization
             _savedGuid.Add(skinData.GUID);
         }
 
+        public void RemoveAllSkinByKey(string skinKey)
+        {
+            var allSkins = Data;
+
+            foreach (var skin in allSkins)
+            {
+                if (skin.GetSkinKey() == skinKey)
+                    RemoveSkin(skin);
+            }
+        }
+
         public void RemoveSkin(SkinData skinData)
         {
             _savedGuid.Remove(skinData.GUID);

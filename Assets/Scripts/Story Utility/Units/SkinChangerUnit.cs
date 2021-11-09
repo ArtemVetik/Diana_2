@@ -6,11 +6,10 @@ using UnityEngine;
 public class SkinChangerUnit : VariantUnit
 {
     [SerializeField] private SkinPreset[] _availableSkinPresets;
-    [SerializeField] private SkinInitializer _dianaModel;
 
-    public void ChangeSkin(int index)
+    public SkinPreset GetSkinPreset(int index)
     {
-        _dianaModel.LoadPreset(_availableSkinPresets[index]);
+        return _availableSkinPresets[index];
     }
 }
 

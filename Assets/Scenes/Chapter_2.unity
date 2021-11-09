@@ -245,10 +245,10 @@ RectTransform:
   m_Father: {fileID: 1587238464}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1116, y: 317.423}
+  m_SizeDelta: {x: -0.00012207, y: 317.423}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &168519070
 MonoBehaviour:
@@ -608,8 +608,6 @@ MonoBehaviour:
   _backgroundViewer: {fileID: 1934581495}
   _emotionViewer: {fileID: 544593815}
   _reader: {fileID: 544593810}
-  _variantButtonSpawnParent: {fileID: 449518925}
-  _variantButtonTemplate: {fileID: 1306936377011552335, guid: 9a4408bddba54a74799e19e1e6e11a62, type: 3}
 --- !u!114 &544593810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1866,6 +1864,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7613040301799651104, guid: cb5c921fd28c1604e972dcf7155bac13, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ecb8b59b7c7b1e043b383024fdc4d131, type: 2}
     - target: {fileID: 7613040301799651105, guid: cb5c921fd28c1604e972dcf7155bac13, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -3340,8 +3342,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 89341f9628c1b1840908b198ba6626af, type: 3}
   - {fileID: 21300000, guid: b4e5c56c7cfabfa4383fe991faef054d, type: 3}
   - {fileID: 21300000, guid: aab8624533aa3f349a6aae7957414857, type: 3}
-  - {fileID: 21300000, guid: f9fa4dff85d4e62469165ecbb9b88ac9, type: 3}
-  - {fileID: 21300000, guid: 96656a0eb47a1474399cf80141618a92, type: 3}
+  - {fileID: 21300000, guid: ae88843db7185bb44b5a90a45d91e8ee, type: 3}
+  - {fileID: 21300000, guid: a92af0852e591574fa88641783c264d6, type: 3}
   - {fileID: 21300000, guid: 5f7b71e39d897cd47b983445f6601918, type: 3}
   - {fileID: 21300000, guid: 566bb580d70329e4b9d53e5b133c3d6e, type: 3}
   - {fileID: 21300000, guid: 0d9c0d95fe32c804eb59aa0843866fa1, type: 3}

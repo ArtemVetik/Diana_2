@@ -15,7 +15,7 @@ MonoBehaviour:
   Phrases:
   - "\u042F \u0442\u0435\u0431\u0435 \u0441\u0435\u0439\u0447\u0430\u0441 \u043E\u0431\u044A\u044F\u0441\u043D\u044E."
   _type: 4
-  _emotions: 
+  _emotions: 0d000000
   _background: 36
   _character: 6
   _showCharacterOnStart: 1

@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Chapter_3.unity
     guid: 8e15c1a84d157ce45837b09cd749ccff
   - enabled: 1
+    path: Assets/Scenes/Chapter_4.unity
+    guid: 5ad747310fbfb084f897292c67281748
+  - enabled: 1
     path: Assets/Scenes/Castomization/Castomization.unity
     guid: 267ea317c71ed5d408475455712ed25f
   m_configObjects: {}

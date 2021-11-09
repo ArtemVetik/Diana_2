@@ -15,9 +15,6 @@ public class UnitViewHandler : MonoBehaviour
     [SerializeField] private EmotionViewer _emotionViewer;
     [SerializeField] private UnitReader _reader;
 
-    [SerializeField] private Transform _variantButtonSpawnParent;
-    [SerializeField] private VariantButton _variantButtonTemplate;
-
     private WaitForSeconds _characterMoveDelay = new WaitForSeconds(ConstantKeys.GlobalKeys.CharacterMovingDuration);
     private WaitForSeconds _backgroundMoveDelay = new WaitForSeconds(ConstantKeys.GlobalKeys.BackgroundMoveDuration);
     private WaitForSeconds _fadingDelay = new WaitForSeconds(ConstantKeys.GlobalKeys.FadingDuration);
@@ -29,6 +26,7 @@ public class UnitViewHandler : MonoBehaviour
     public event UnityAction UnitViewed;
     public event UnityAction StandartUnitCompleted;
     public event UnityAction<int> VariantUnitCompleted;
+    public event UnityAction<SkinChangerUnit, int> SkinChangerUnitCompleted;
 
     private void OnEnable()
     {
@@ -83,7 +81,7 @@ public class UnitViewHandler : MonoBehaviour
         {
             _backgroundViewer.MoveBackground(_currentUnit.BackgroundMoveData);
 
-            if(!_currentUnit.BackgroundMoveData.Fixed)
+            if (!_currentUnit.BackgroundMoveData.Fixed)
             {
                 yield return _backgroundMoveDelay;
             }
@@ -130,13 +128,19 @@ public class UnitViewHandler : MonoBehaviour
 
         yield return null;
 
-        if(!(_currentUnit is VariantUnit))
+        if (!(_currentUnit is VariantUnit))
         {
             StandartUnitCompleted?.Invoke();
         }
-        else
+        else if(!(_currentUnit is SkinChangerUnit))
         {
             VariantUnitCompleted?.Invoke(_chosenVariant);
+        }
+        else
+        {
+            SkinChangerUnit unit = _currentUnit as SkinChangerUnit;
+
+            SkinChangerUnitCompleted?.Invoke(unit,_chosenVariant);
         }
     }
 
@@ -152,9 +156,7 @@ public class UnitViewHandler : MonoBehaviour
         }
 
         _phraseViewer.ViewVariableUnit();
-
         _variantViewer.AddVariant(phrase, index, out VariantButton button);
-
         button.VariantChosen += OnVariantChosen;
         _buttonsPool.Add(button);
     }
@@ -173,7 +175,7 @@ public class UnitViewHandler : MonoBehaviour
             button.VariantChosen -= OnVariantChosen;
             Destroy(button.gameObject);
         }
-        
+
         _buttonsPool.Clear();
     }
 }

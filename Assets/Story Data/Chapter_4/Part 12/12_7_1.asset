@@ -19,7 +19,7 @@ MonoBehaviour:
     \u043A\u043E\u0442\u043E\u0440\u043E\u0439 \u0431\u044B\u043B \u0437\u0430\u0434\u0432\u0438\u043D\u0443\u0442
     \u043F\u043E\u0434 \u043A\u043E\u0432\u0440\u0438\u043A \u043F\u0440\u0438 \u0432\u0445\u043E\u0434\u0435. "
   _type: 2
-  _emotions: 
+  _emotions: 05000000
   _background: 10
   _character: 0
   _showCharacterOnStart: 0
@@ -27,4 +27,4 @@ MonoBehaviour:
   _fadeIn: 1
   _fadeOut: 1
   _lastUnitInPart: 0
-  _bgMoveData: {fileID: 0}
+  _bgMoveData: {fileID: 11400000, guid: 79c7db1d2b6267c4899b332bffdb0138, type: 2}

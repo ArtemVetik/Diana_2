@@ -91,8 +91,8 @@ public static class ConstantKeys
 
     public enum Backgrounds
     {
-        OP_stair_night,
-        OP_stair_day,
+        OP_Diana_stair_night,
+        OP_Diana_stair_day,
         OP_photo_album,
         OP_opened_album,
         OP_kitchen_night_wide,
@@ -160,6 +160,15 @@ public static class ConstantKeys
         OP_Diana_bathroom_day,
         OP_note_rose,
         OP_incoming_call_Dimitrii,
-        OP_porch_note_day
+        OP_porch_note_day,
+        OP_letter_table,
+        OP_velvet_box,
+        OP_velvet_box_open,
+        OP_scroll_closed_table,
+        OP_scroll_open_table,
+        OP_suburb_day_1,
+        OP_suburb_night_1,
+        OP_hospital_back_door_day,
+        OP_hospital_back_door_night
     }
 }
